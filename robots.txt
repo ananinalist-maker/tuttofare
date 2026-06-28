@@ -49,3 +49,4 @@ User-agent: Meta-ExternalAgent
 Allow: /
 
 Sitemap: https://tuttofare-roma.vercel.app/sitemap.xml
+Sitemap: https://tuttofare-roma.vercel.app/sitemap-main.xml

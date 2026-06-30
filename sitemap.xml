@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://tuttofare-roma.vercel.app/</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://tuttofare-roma.vercel.app/</loc><lastmod>2026-06-30</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://tuttofare-roma.vercel.app/guide/</loc><lastmod>2026-06-30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tuttofare-roma.vercel.app/guide/idraulico-urgente-roma</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tuttofare-roma.vercel.app/guide/imbianchino-roma</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tuttofare-roma.vercel.app/guide/ristrutturare-bagno-roma</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tuttofare-roma.vercel.app/guide/ristrutturazione-casa-roma</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tuttofare-roma.vercel.app/guide/permessi-ristrutturare-casa-roma</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tuttofare-roma.vercel.app/guide/ristrutturazione-bagno-bracciano</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tuttofare-roma.vercel.app/guide/ristrutturazione-casa-sutri</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tuttofare-roma.vercel.app/guide/imbianchino-civita-castellana</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tuttofare-roma.vercel.app/guide/trucchi-ristrutturazione</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tuttofare-roma.vercel.app/guide/scegliere-ditta-ristrutturazioni</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tuttofare-roma.vercel.app/guide/rifare-il-tetto</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tuttofare-roma.vercel.app/guide/ristrutturazione-completa-7-passi</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tuttofare-roma.vercel.app/guide/errori-ristrutturazione</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tuttofare-roma.vercel.app/guide/muffa-pareti</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>

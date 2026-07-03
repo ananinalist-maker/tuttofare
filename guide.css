@@ -1,5 +1,11 @@
-/* Tuttofare — Guide pages shared styles */
-:root{--navy:#16356E;--deep:#0F2750;--grey:#DCDCDC;--yellow:#F5B82E;--wa:#21B557;--wa-dark:#188A43;--ink:#1a1a1a;--mute:#6b6b6b}
+/* Tuttofare — Guide pages shared styles (v2 — polish: progress bar, fade-in, hover-lift) */
+:root{--navy:#16356E;--deep:#0F2750;--grey:#DCDCDC;--yellow:#F5B82E;--yellow-dark:#B58818;--wa:#21B557;--wa-dark:#188A43;--ink:#1a1a1a;--mute:#6b6b6b}
+/* Reading progress bar */
+.read-progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--yellow) 0%,var(--wa) 100%);z-index:100;transition:width .1s linear;box-shadow:0 0 6px rgba(0,0,0,.15)}
+/* Fade-in-on-scroll utility */
+.fade-in{opacity:0;transform:translateY(18px);transition:opacity .55s ease-out,transform .55s ease-out}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+@media (prefers-reduced-motion: reduce){.fade-in{opacity:1;transform:none;transition:none}.read-progress{display:none}}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;font-family:'IBM Plex Sans',system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:#fafafa;line-height:1.65}

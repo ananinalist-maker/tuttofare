@@ -56,6 +56,7 @@ gtag('js',new Date());gtag('config','G-K2ZMN01S3M');
 <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
 </head>
 <body>
+<div class="read-progress" id="rp"></div>
 <header class="site">
   <div class="wrap">
     <a class="logo" href="/">TUTTOFARE</a>
@@ -64,7 +65,7 @@ gtag('js',new Date());gtag('config','G-K2ZMN01S3M');
 </header>
 <main class="wrap">
 <nav class="crumb"><a href="/">Home</a> &rsaquo; <a href="/guide/">Guide</a> &rsaquo; Ristrutturazione casa a Roma: quanto costa davvero e come non farsi fregare</nav>
-<article class="guide">
+<article class="guide fade-in">
 <span class="meta">Guida pratica · Roma e provincia</span>
 <h1>Ristrutturazione casa a Roma: quanto costa davvero e come non farsi fregare</h1>
 
@@ -117,7 +118,7 @@ gtag('js',new Date());gtag('config','G-K2ZMN01S3M');
         <a class="btn-wa" href="https://wa.me/393894481853?text=Buongiorno%2C%20ho%20letto%20la%20guida%20sulla%20ristrutturazione%20a%20Roma%20e%20vorrei%20un%20preventivo." target="_blank" rel="noopener">Richiedi un preventivo gratuito</a>
       </div>
 </article>
-<aside class="related">
+<aside class="related fade-in">
 <h3>Continua a leggere</h3>
 <ul>
 <li><a href="/guide/scegliere-ditta-ristrutturazioni">Come scegliere la ditta giusta: 7 domande da fare prima di firmare</a></li>
@@ -126,7 +127,7 @@ gtag('js',new Date());gtag('config','G-K2ZMN01S3M');
 <li><a href="/guide/">&larr; Tutte le guide</a></li>
 </ul>
 </aside>
-<div class="zones-note"><strong>Zone di intervento:</strong> Roma e provincia (centro storico, Roma Nord, Bracciano, Anguillara Sabazia, Trevignano Romano, Formello, Campagnano), Viterbo e provincia (Sutri, Nepi, Civita Castellana, Vetralla, Capranica, Ronciglione, Caprarola). Sopralluogo gratuito ovunque.</div>
+<div class="zones-note fade-in"><strong>Zone di intervento:</strong> Roma e provincia (centro storico, Roma Nord, Bracciano, Anguillara Sabazia, Trevignano Romano, Formello, Campagnano), Viterbo e provincia (Sutri, Nepi, Civita Castellana, Vetralla, Capranica, Ronciglione, Caprarola). Sopralluogo gratuito ovunque.</div>
 </main>
 <footer class="site">
 <div class="wrap">
@@ -145,6 +146,12 @@ if(!l)return;
 var lbl=l.classList.contains("wa-float")?"floating":l.classList.contains("btn-wa")?"articolo":"altro";
 gtag("event","whatsapp_click",{event_category:"lead",event_label:lbl,transport_type:"beacon"});
 });
+</script>
+<script>
+(function(){var rp=document.getElementById("rp"),cf=null;
+if(rp){window.addEventListener("scroll",function(){if(cf)return;cf=requestAnimationFrame(function(){var s=window.scrollY,h=document.documentElement.scrollHeight-window.innerHeight;rp.style.width=(h>0?Math.min(100,s/h*100):0)+"%";cf=null;});},{passive:true});}
+var els=document.querySelectorAll(".fade-in");
+if(els.length&&"IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("visible");io.unobserve(e.target);}});},{threshold:0.12});els.forEach(function(el){io.observe(el);});}else{els.forEach(function(el){el.classList.add("visible");});}})();
 </script>
 </body>
 </html>

@@ -21,8 +21,13 @@
 <style>
 .list-wrap{max-width:960px}
 .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin:24px 0 12px}
-.guide-card{display:block;background:#fff;border:1px solid #ececec;border-radius:8px;padding:22px 22px 20px;text-decoration:none;color:inherit;transition:transform .15s,box-shadow .15s}
-.guide-card:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.06);text-decoration:none}
+.guide-card{display:block;background:#fff;border:1px solid #ececec;border-radius:8px;padding:22px 22px 20px;text-decoration:none;color:inherit;position:relative;overflow:hidden;transition:transform .18s,box-shadow .18s,border-color .18s}
+.guide-card::before{content:"";position:absolute;top:0;left:0;width:0;height:3px;background:#F5B82E;transition:width .3s ease}
+.guide-card:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(22,53,110,.12);text-decoration:none;border-color:#F5B82E}
+.guide-card:hover::before{width:100%}
+.guide-card:hover .more{color:#B58818}
+.guide-card:hover h2{color:#0F2750}
+@media (prefers-reduced-motion: reduce){.guide-card{transition:none}.guide-card:hover{transform:none}.guide-card::before{display:none}}
 .guide-card .cat{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#6b6b6b;background:#f1f1f1;padding:3px 9px;border-radius:4px;margin-bottom:10px}
 .guide-card h2{font-family:'IBM Plex Mono',monospace;font-size:17px;line-height:1.3;color:#16356E;margin:0 0 8px}
 .guide-card p{font-size:14px;color:#555;margin:0 0 12px;line-height:1.55}
@@ -58,6 +63,7 @@ gtag('js',new Date());gtag('config','G-K2ZMN01S3M');
 <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
 </head>
 <body>
+<div class="read-progress" id="rp"></div>
 <header class="site">
   <div class="wrap">
     <a class="logo" href="/">TUTTOFARE</a>
@@ -66,26 +72,26 @@ gtag('js',new Date());gtag('config','G-K2ZMN01S3M');
 </header>
 <main class="wrap list-wrap">
 <nav class="crumb"><a href="/">Home</a> &rsaquo; Guide</nav>
-<article class="guide">
+<article class="guide fade-in">
 <span class="meta">Guide e consigli</span>
 <h1>Guide pratiche sulla ristrutturazione</h1>
 <p>Risposte oneste alle domande che riceviamo ogni settimana da chi sta per ristrutturare casa a Roma, Viterbo o provincia. Scritte da chi è in cantiere dal 2003.</p>
 
 <h2 class="section-h">Guide per zona</h2>
 <div class="guide-grid">
-  <a class="guide-card" href="/guide/ristrutturazione-bagno-bracciano">
+  <a class="guide-card fade-in" href="/guide/ristrutturazione-bagno-bracciano">
     <span class="cat">Bagno · Bracciano</span>
     <h2>Ristrutturare il bagno a Bracciano</h2>
     <p>Tempi, costi (4.500-10.000 €), impermeabilizzazione e vincoli del lago. Per Bracciano, Anguillara, Trevignano.</p>
     <span class="more">Leggi la guida &rarr;</span>
   </a>
-  <a class="guide-card" href="/guide/ristrutturazione-casa-sutri">
+  <a class="guide-card fade-in" href="/guide/ristrutturazione-casa-sutri">
     <span class="cat">Tuscia · Sutri, Nepi, Capranica</span>
     <h2>Ristrutturare casa nella Tuscia</h2>
     <p>Pareti in tufo, tetti in legno, vincoli paesaggistici e logistica. Cosa cambia tra Tuscia e Roma.</p>
     <span class="more">Leggi la guida &rarr;</span>
   </a>
-  <a class="guide-card" href="/guide/imbianchino-civita-castellana">
+  <a class="guide-card fade-in" href="/guide/imbianchino-civita-castellana">
     <span class="cat">Pittura · Civita Castellana</span>
     <h2>Imbianchino nella Tuscia viterbese</h2>
     <p>5 domande da fare prima, prezzi al m² (7-18 €) e gli errori più frequenti. Per Civita Castellana, Nepi, Sutri.</p>
@@ -95,37 +101,37 @@ gtag('js',new Date());gtag('config','G-K2ZMN01S3M');
 
 <h2 class="section-h">Guide per servizio</h2>
 <div class="guide-grid">
-  <a class="guide-card" href="/guide/idraulico-urgente-roma">
+  <a class="guide-card fade-in" href="/guide/idraulico-urgente-roma">
     <span class="cat">Emergenza</span>
     <h2>Idraulico urgente a Roma</h2>
     <p>Perdita d'acqua, scarico ingorgato: i primi 10 minuti che fanno risparmiare centinaia di euro.</p>
     <span class="more">Leggi la guida &rarr;</span>
   </a>
-  <a class="guide-card" href="/guide/imbianchino-roma">
+  <a class="guide-card fade-in" href="/guide/imbianchino-roma">
     <span class="cat">Pittura</span>
     <h2>Imbianchino a Roma</h2>
     <p>5 cose da chiedere prima, preparazione delle pareti, tipi di pittura, prezzi medi.</p>
     <span class="more">Leggi la guida &rarr;</span>
   </a>
-  <a class="guide-card" href="/guide/ristrutturare-bagno-roma">
+  <a class="guide-card fade-in" href="/guide/ristrutturare-bagno-roma">
     <span class="cat">Bagno</span>
     <h2>Ristrutturare il bagno a Roma</h2>
     <p>Fasi di lavoro, tempi, errori costosi, impermeabilizzazione e quando serve la CILA.</p>
     <span class="more">Leggi la guida &rarr;</span>
   </a>
-  <a class="guide-card" href="/guide/ristrutturazione-casa-roma">
+  <a class="guide-card fade-in" href="/guide/ristrutturazione-casa-roma">
     <span class="cat">Ristrutturazione completa</span>
     <h2>Ristrutturazione casa a Roma</h2>
     <p>Quanto costa davvero, tempi reali, errori da evitare e come scegliere l'impresa giusta.</p>
     <span class="more">Leggi la guida &rarr;</span>
   </a>
-  <a class="guide-card" href="/guide/rifare-il-tetto">
+  <a class="guide-card fade-in" href="/guide/rifare-il-tetto">
     <span class="cat">Manutenzione</span>
     <h2>Rifare il tetto: 5 segnali</h2>
     <p>Macchie, tegole, grondaie: come capire quando intervenire prima del danno grosso.</p>
     <span class="more">Leggi la guida &rarr;</span>
   </a>
-  <a class="guide-card" href="/guide/muffa-pareti">
+  <a class="guide-card fade-in" href="/guide/muffa-pareti">
     <span class="cat">Salute della casa</span>
     <h2>Muffa sulle pareti</h2>
     <p>Cause vere (condensa, ponti termici, infiltrazioni) e soluzioni definitive contro l'umidità.</p>
@@ -135,31 +141,31 @@ gtag('js',new Date());gtag('config','G-K2ZMN01S3M');
 
 <h2 class="section-h">Prima di iniziare</h2>
 <div class="guide-grid">
-  <a class="guide-card" href="/guide/scegliere-ditta-ristrutturazioni">
+  <a class="guide-card fade-in" href="/guide/scegliere-ditta-ristrutturazioni">
     <span class="cat">Consigli</span>
     <h2>Come scegliere la ditta giusta</h2>
     <p>Le 7 domande che distinguono un professionista serio da una brutta sorpresa.</p>
     <span class="more">Leggi la guida &rarr;</span>
   </a>
-  <a class="guide-card" href="/guide/trucchi-ristrutturazione">
+  <a class="guide-card fade-in" href="/guide/trucchi-ristrutturazione">
     <span class="cat">Da sapere</span>
     <h2>5 trucchi con cui ti fregano</h2>
     <p>I raggiri più comuni a Roma e Viterbo, raccontati da chi è in cantiere da oltre 20 anni.</p>
     <span class="more">Leggi la guida &rarr;</span>
   </a>
-  <a class="guide-card" href="/guide/errori-ristrutturazione">
+  <a class="guide-card fade-in" href="/guide/errori-ristrutturazione">
     <span class="cat">Consigli</span>
     <h2>7 errori da evitare</h2>
     <p>Gli sbagli che vediamo più spesso nei cantieri — e come non farli.</p>
     <span class="more">Leggi la guida &rarr;</span>
   </a>
-  <a class="guide-card" href="/guide/ristrutturazione-completa-7-passi">
+  <a class="guide-card fade-in" href="/guide/ristrutturazione-completa-7-passi">
     <span class="cat">Pianificazione</span>
     <h2>Ristrutturazione in 7 passi</h2>
     <p>Budget, preventivo, tempi, consegna: il percorso giusto dall'inizio alla fine.</p>
     <span class="more">Leggi la guida &rarr;</span>
   </a>
-  <a class="guide-card" href="/guide/permessi-ristrutturare-casa-roma">
+  <a class="guide-card fade-in" href="/guide/permessi-ristrutturare-casa-roma">
     <span class="cat">Burocrazia</span>
     <h2>Permessi: CILA, SCIA</h2>
     <p>Edilizia libera, CILA, SCIA: quale pratica serve per il tuo lavoro a Roma.</p>
@@ -190,6 +196,12 @@ if(!l)return;
 var lbl=l.classList.contains("wa-float")?"floating":l.classList.contains("btn-wa")?"articolo":"altro";
 gtag("event","whatsapp_click",{event_category:"lead",event_label:lbl,transport_type:"beacon"});
 });
+</script>
+<script>
+(function(){var rp=document.getElementById("rp"),cf=null;
+if(rp){window.addEventListener("scroll",function(){if(cf)return;cf=requestAnimationFrame(function(){var s=window.scrollY,h=document.documentElement.scrollHeight-window.innerHeight;rp.style.width=(h>0?Math.min(100,s/h*100):0)+"%";cf=null;});},{passive:true});}
+var els=document.querySelectorAll(".fade-in");
+if(els.length&&"IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("visible");io.unobserve(e.target);}});},{threshold:0.12});els.forEach(function(el){io.observe(el);});}else{els.forEach(function(el){el.classList.add("visible");});}})();
 </script>
 </body>
 </html>

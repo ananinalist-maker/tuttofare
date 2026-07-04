@@ -1,5 +1,5 @@
 # Tuttofare — Ristrutturazioni Roma e Viterbo
-# https://tuttofare-roma.vercel.app/
+# https://tuttofare-roma.it/
 
 User-agent: *
 Allow: /
@@ -48,4 +48,4 @@ Allow: /
 User-agent: Meta-ExternalAgent
 Allow: /
 
-Sitemap: https://tuttofare-roma.vercel.app/sitemap.xml
+Sitemap: https://tuttofare-roma.it/sitemap.xml

@@ -1,0 +1,40 @@
+# Tuttofare
+
+> Impresa di ristrutturazioni a Roma e Viterbo, attiva dal 2003. Ristrutturazioni complete, bagni, impianti idraulici, pitture e cartongesso, pavimenti e rivestimenti, tetti e coperture, facciate, piccole manutenzioni. Sopralluogo e preventivo sempre gratuiti. Contatto diretto su WhatsApp: +39 389 448 1853.
+
+## Dati principali
+
+- Ragione: Tuttofare
+- Attività dal: 2003
+- Zone servite: Roma e provincia (centro storico, Roma Nord, Bracciano, Anguillara Sabazia, Trevignano Romano, Formello, Campagnano di Roma), provincia di Viterbo (Sutri, Nepi, Civita Castellana, Vetralla, Capranica, Ronciglione, Caprarola, Bassano Romano)
+- Prezzi indicativi: ristrutturazione completa 450-900 €/mq, bagno 700-1.300 €, pittura 8-18 €/mq, pavimenti 35-75 €/mq, tetto 90-220 €/mq, facciata 45-110 €/mq
+- Contatto: WhatsApp +39 389 448 1853
+
+## Pagine principali
+
+- [Home](https://tuttofare-roma.it/): servizi, calcolatore preventivo, FAQ, contatti
+- [Guide](https://tuttofare-roma.it/guide/): indice di tutte le guide pratiche sulla ristrutturazione
+
+## Guide
+
+- [Ristrutturazione casa a Roma: quanto costa davvero](https://tuttofare-roma.it/guide/ristrutturazione-casa-roma)
+- [Ristrutturare il bagno a Roma](https://tuttofare-roma.it/guide/ristrutturare-bagno-roma)
+- [Idraulico urgente a Roma](https://tuttofare-roma.it/guide/idraulico-urgente-roma)
+- [Imbianchino a Roma](https://tuttofare-roma.it/guide/imbianchino-roma)
+- [Permessi per ristrutturare casa a Roma (CILA, SCIA)](https://tuttofare-roma.it/guide/permessi-ristrutturare-casa-roma)
+- [Rifare il tetto: 5 segnali](https://tuttofare-roma.it/guide/rifare-il-tetto)
+- [Ristrutturazione completa in 7 passi](https://tuttofare-roma.it/guide/ristrutturazione-completa-7-passi)
+- [7 errori da evitare in una ristrutturazione](https://tuttofare-roma.it/guide/errori-ristrutturazione)
+- [Muffa sulle pareti: cause e soluzioni](https://tuttofare-roma.it/guide/muffa-pareti)
+- [Come scegliere la ditta giusta](https://tuttofare-roma.it/guide/scegliere-ditta-ristrutturazioni)
+- [5 trucchi con cui ti fregano in una ristrutturazione](https://tuttofare-roma.it/guide/trucchi-ristrutturazione)
+- [Ristrutturare il bagno a Bracciano](https://tuttofare-roma.it/guide/ristrutturazione-bagno-bracciano)
+- [Ristrutturare casa a Sutri e nella Tuscia](https://tuttofare-roma.it/guide/ristrutturazione-casa-sutri)
+- [Imbianchino a Civita Castellana, Nepi e Sutri](https://tuttofare-roma.it/guide/imbianchino-civita-castellana)
+- [Ristrutturare casa a Roma Nord](https://tuttofare-roma.it/guide/ristrutturazione-roma-nord)
+- [Imbianchino a Bracciano, Anguillara e Trevignano](https://tuttofare-roma.it/guide/imbianchino-bracciano)
+- [Rifare il tetto a Viterbo e nella Tuscia](https://tuttofare-roma.it/guide/rifare-tetto-viterbo-tuscia)
+
+## Note per i crawler
+
+Sitemap: https://tuttofare-roma.it/sitemap.xml

@@ -312,6 +312,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.7);padding:30px 0;font-siz
 .case-card{background:var(--white);border:1px solid var(--line);padding:18px 20px 22px}
 .case-photos{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:16px}
 .case-photos .gallery-item{aspect-ratio:1/1}
+.case-photos video{width:100%;height:100%;object-fit:cover;display:block;aspect-ratio:1/1;background:#000}
 .case-card h3{font-size:17px;color:var(--navy);text-transform:uppercase;font-family:'IBM Plex Mono',monospace;margin-bottom:8px}
 .case-card p{font-size:14.5px;color:var(--steel);line-height:1.55}
 /* ===== galleria lavori ===== */
@@ -521,9 +522,9 @@ body.modal-open{overflow:hidden}
 
       <article class="case-card">
         <div class="case-photos">
-          <button class="gallery-item" data-full="img/casi/completa-demolizione.jpg"><img src="img/casi/completa-demolizione.jpg" alt="Demolizione e impianti a vista prima della ristrutturazione" loading="lazy"></button>
-          <button class="gallery-item" data-full="img/casi/completa-muratura.jpg"><img src="img/casi/completa-muratura.jpg" alt="Muratura grezza durante la ristrutturazione" loading="lazy"></button>
-          <button class="gallery-item" data-full="img/casi/completa-parete-rossa.jpg"><img src="img/casi/completa-parete-rossa.jpg" alt="Camera finita con parete rossa" loading="lazy"></button>
+          <video controls playsinline preload="metadata" poster="img/casi/completa-demolizione.jpg" aria-label="Demolizione e impianti a vista prima della ristrutturazione"><source src="video/completa-demolizione.mp4" type="video/mp4"></video>
+          <video controls playsinline preload="metadata" poster="img/casi/completa-muratura.jpg" aria-label="Muratura grezza durante la ristrutturazione"><source src="video/completa-muratura.mp4" type="video/mp4"></video>
+          <video controls playsinline preload="metadata" poster="img/casi/completa-parete-rossa.jpg" aria-label="Camera finita con parete rossa"><source src="video/completa-parete-rossa.mp4" type="video/mp4"></video>
         </div>
         <h3>Ristrutturazione completa</h3>
         <p>Dalla demolizione e rifacimento degli impianti alla muratura grezza, fino alle pareti tinteggiate e ai pavimenti finiti. Un cantiere seguito dall'inizio alla consegna.</p>
@@ -531,9 +532,9 @@ body.modal-open{overflow:hidden}
 
       <article class="case-card">
         <div class="case-photos">
-          <button class="gallery-item" data-full="img/casi/bagno-posa-piastrelle.jpg"><img src="img/casi/bagno-posa-piastrelle.jpg" alt="Posa piastrelle in corso in bagno" loading="lazy"></button>
-          <button class="gallery-item" data-full="img/casi/bagno-rivestimento-dettaglio.jpg"><img src="img/casi/bagno-rivestimento-dettaglio.jpg" alt="Dettaglio rivestimento decorato" loading="lazy"></button>
-          <button class="gallery-item" data-full="img/casi/bagno-finito.jpg"><img src="img/casi/bagno-finito.jpg" alt="Bagno finito con specchio e illuminazione" loading="lazy"></button>
+          <video controls playsinline preload="metadata" poster="img/casi/bagno-posa-piastrelle.jpg" aria-label="Posa piastrelle in corso in bagno"><source src="video/bagno-posa-piastrelle.mp4" type="video/mp4"></video>
+          <video controls playsinline preload="metadata" poster="img/casi/bagno-rivestimento-dettaglio.jpg" aria-label="Dettaglio rivestimento decorato"><source src="video/bagno-rivestimento-dettaglio.mp4" type="video/mp4"></video>
+          <video controls playsinline preload="metadata" poster="img/casi/bagno-finito.jpg" aria-label="Bagno finito con specchio e illuminazione"><source src="video/bagno-finito.mp4" type="video/mp4"></video>
         </div>
         <h3>Bagno e rivestimenti</h3>
         <p>Posa di rivestimenti decorati, cura del dettaglio nei tagli e nelle finiture, fino al bagno completo con specchio e illuminazione integrata.</p>
@@ -541,8 +542,8 @@ body.modal-open{overflow:hidden}
 
       <article class="case-card">
         <div class="case-photos">
-          <button class="gallery-item" data-full="img/casi/illuminazione-veletta.jpg"><img src="img/casi/illuminazione-veletta.jpg" alt="Veletta con illuminazione a incasso" loading="lazy"></button>
-          <button class="gallery-item" data-full="img/casi/cabina-armadio.jpg"><img src="img/casi/cabina-armadio.jpg" alt="Cabina armadio su misura" loading="lazy"></button>
+          <video controls playsinline preload="metadata" poster="img/casi/illuminazione-veletta.jpg" aria-label="Veletta con illuminazione a incasso"><source src="video/illuminazione-veletta.mp4" type="video/mp4"></video>
+          <video controls playsinline preload="metadata" poster="img/casi/cabina-armadio.jpg" aria-label="Cabina armadio su misura"><source src="video/cabina-armadio.mp4" type="video/mp4"></video>
         </div>
         <h3>Illuminazione e su misura</h3>
         <p>Velette con illuminazione a incasso e mobili su misura come cabine armadio: i dettagli che fanno la differenza in una ristrutturazione.</p>

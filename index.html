@@ -317,7 +317,9 @@ footer{background:var(--navy);color:rgba(255,255,255,.7);padding:30px 0;font-siz
 .case-card p{font-size:14.5px;color:var(--steel);line-height:1.55}
 /* ===== galleria lavori ===== */
 .gallery{background:var(--grey)}
-.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px;margin-top:28px}
+.gallery-album{margin-top:28px}
+.gallery-toggle{font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:var(--navy);background:var(--white);border:1px solid var(--line);max-width:420px}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px;margin-top:20px}
 .gallery-item{aspect-ratio:1/1;overflow:hidden;background:#E8ECF3;cursor:pointer;border:none;padding:0}
 .gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
 .gallery-item:hover img{transform:scale(1.08)}
@@ -481,6 +483,8 @@ body.modal-open{overflow:hidden}
     <span class="eyebrow">I nostri lavori</span>
     <h2>Foto dai cantieri.<br>Così come sono.</h2>
     <p class="lede">Scatti reali presi durante i lavori: niente foto da catalogo, solo cantieri veri a Roma e Viterbo.</p>
+    <details class="gallery-album">
+    <summary class="gallery-toggle">Apri l'album — 22 foto dai cantieri</summary>
     <div class="gallery-grid">
       <button class="gallery-item" data-full="img/lavori/ristrutturazione-completa.jpg"><img src="img/lavori/ristrutturazione-completa.jpg" alt="Lavoro di ristrutturazione in corso" loading="lazy"></button>
       <button class="gallery-item" data-full="img/lavori/bagno-mosaico.jpg"><img src="img/lavori/bagno-mosaico.jpg" alt="Doccia con rivestimento a mosaico" loading="lazy"></button>
@@ -505,6 +509,7 @@ body.modal-open{overflow:hidden}
       <button class="gallery-item" data-full="img/galleria/bagno-pavimento-pietra.jpg"><img src="img/galleria/bagno-pavimento-pietra.jpg" alt="Pavimento bagno effetto pietra" loading="lazy"></button>
       <button class="gallery-item" data-full="img/galleria/ingresso-porta.jpg"><img src="img/galleria/ingresso-porta.jpg" alt="Ingresso in cartongesso" loading="lazy"></button>
     </div>
+    </details>
   </div>
 </section>
 

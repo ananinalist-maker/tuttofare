@@ -308,14 +308,12 @@ footer{background:var(--navy);color:rgba(255,255,255,.7);padding:30px 0;font-siz
 .svc:hover .svc-ph img{transform:scale(1.07)}
 .svc-body{padding:20px 22px}
 /* ===== casi ===== */
-.case-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:28px;margin-top:28px}
-.case-card{background:var(--white);border:1px solid var(--line);padding:18px 20px 22px}
-.case-photos{display:grid;grid-template-columns:1fr;gap:10px;margin-bottom:16px}
-.case-photos .gallery-item{aspect-ratio:16/10}
-.case-photos video{width:100%;height:100%;object-fit:contain;display:block;aspect-ratio:16/10;background:#000}
-.case-card h3{font-size:17px;color:var(--navy);text-transform:uppercase;font-family:'IBM Plex Mono',monospace;margin-bottom:8px}
-.case-card p{font-size:14.5px;color:var(--steel);line-height:1.55}
-.case-more{display:inline-block;cursor:pointer;margin-top:14px;font-size:13.5px;font-weight:700;color:var(--navy);border-bottom:2px solid var(--hat)}
+.case-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px;margin-top:28px}
+.modal-body .case-videos{display:grid;grid-template-columns:1fr;gap:10px;margin:18px 0}
+.modal-body .case-videos video{width:100%;height:100%;object-fit:contain;display:block;aspect-ratio:16/10;background:#000}
+.modal-body .case-video-cap{font-size:13px;color:var(--steel);margin:-4px 0 4px;font-style:italic}
+.modal-body .case-album{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px;margin:14px 0 18px}
+.modal-body .case-album .gallery-item{aspect-ratio:1/1}
 /* ===== galleria lavori ===== */
 .gallery{background:var(--grey)}
 .gallery-album{margin-top:28px}
@@ -526,37 +524,20 @@ body.modal-open{overflow:hidden}
     <p class="lede">Tre esempi di lavori seguiti dall'inizio alla fine: demolizione, impianti, muratura, rivestimenti e finiture. Video girati davvero in cantiere, non ricostruzioni.</p>
     <div class="case-grid">
 
-      <article class="case-card">
-        <div class="case-photos">
-          <video controls playsinline preload="metadata" poster="img/casi/completa-demolizione.jpg" aria-label="Demolizione e impianti a vista prima della ristrutturazione"><source src="video/completa-demolizione.mp4" type="video/mp4"></video>
-          <video controls playsinline preload="metadata" poster="img/casi/completa-muratura.jpg" aria-label="Muratura grezza durante la ristrutturazione"><source src="video/completa-muratura.mp4" type="video/mp4"></video>
-          <video controls playsinline preload="metadata" poster="img/casi/completa-parete-rossa.jpg" aria-label="Camera finita con parete rossa"><source src="video/completa-parete-rossa.mp4" type="video/mp4"></video>
-        </div>
-        <h3>Ristrutturazione completa</h3>
-        <p>Si parte dal grezzo: impianti a vista, muri spogliati, tutto pronto per essere ripensato da zero. Poi la nuova muratura, tirata su stanza per stanza. Alla fine l'ambiente prende forma — pareti tinteggiate, pavimenti posati, ogni dettaglio curato fino alla consegna delle chiavi.</p>
-        <span class="more case-more" data-article="c1">Scopri il progetto →</span>
-      </article>
+      <button class="post-card" data-article="c1">
+        <div class="post-img"><img src="img/casi/completa-parete-rossa.jpg" alt="Ristrutturazione completa" loading="lazy"></div>
+        <div class="post-body"><span class="cat">Progetto reale</span><h3>Ristrutturazione completa</h3><p>Dal grezzo alla consegna: demolizione, muratura, impianti e finiture.</p><span class="more">Guarda il progetto →</span></div>
+      </button>
 
-      <article class="case-card">
-        <div class="case-photos">
-          <video controls playsinline preload="metadata" poster="img/casi/bagno-posa-piastrelle.jpg" aria-label="Posa piastrelle in corso in bagno"><source src="video/bagno-posa-piastrelle.mp4" type="video/mp4"></video>
-          <video controls playsinline preload="metadata" poster="img/casi/bagno-rivestimento-dettaglio.jpg" aria-label="Dettaglio rivestimento decorato"><source src="video/bagno-rivestimento-dettaglio.mp4" type="video/mp4"></video>
-          <video controls playsinline preload="metadata" poster="img/casi/bagno-finito.jpg" aria-label="Bagno finito con specchio e illuminazione"><source src="video/bagno-finito.mp4" type="video/mp4"></video>
-        </div>
-        <h3>Bagno e rivestimenti</h3>
-        <p>Un rivestimento a mosaico patchwork, posato pezzo per pezzo con cura nei tagli e negli allineamenti — il tipo di dettaglio che si vede solo da vicino. Il risultato è un bagno con doccia in vetro, specchio su misura e illuminazione integrata che valorizza ogni centimetro.</p>
-        <span class="more case-more" data-article="c2">Scopri il progetto →</span>
-      </article>
+      <button class="post-card" data-article="c2">
+        <div class="post-img"><img src="img/casi/bagno-finito.jpg" alt="Bagno e rivestimenti" loading="lazy"></div>
+        <div class="post-body"><span class="cat">Progetto reale</span><h3>Bagno e rivestimenti</h3><p>Posa di un rivestimento decorato, fino al bagno finito con specchio e doccia in vetro.</p><span class="more">Guarda il progetto →</span></div>
+      </button>
 
-      <article class="case-card">
-        <div class="case-photos">
-          <video controls playsinline preload="metadata" poster="img/casi/illuminazione-veletta.jpg" aria-label="Veletta con illuminazione a incasso"><source src="video/illuminazione-veletta.mp4" type="video/mp4"></video>
-          <video controls playsinline preload="metadata" poster="img/casi/cabina-armadio.jpg" aria-label="Cabina armadio su misura"><source src="video/cabina-armadio.mp4" type="video/mp4"></video>
-        </div>
-        <h3>Illuminazione e su misura</h3>
-        <p>Velette a soffitto con illuminazione a incasso, per dare profondità agli ambienti senza lampade a vista. E per chi ha bisogno di ordine, cabine armadio su misura pensate per sfruttare ogni angolo disponibile della stanza.</p>
-        <span class="more case-more" data-article="c3">Scopri il progetto →</span>
-      </article>
+      <button class="post-card" data-article="c3">
+        <div class="post-img"><img src="img/casi/cabina-armadio.jpg" alt="Illuminazione e su misura" loading="lazy"></div>
+        <div class="post-body"><span class="cat">Progetto reale</span><h3>Illuminazione e su misura</h3><p>Velette con illuminazione a incasso e mobili su misura come cabine armadio.</p><span class="more">Guarda il progetto →</span></div>
+      </button>
 
     </div>
 
@@ -566,6 +547,20 @@ body.modal-open{overflow:hidden}
       <span class="meta">Progetto reale · Ristrutturazione completa</span>
       <h3>Ristrutturazione completa: dal grezzo alla consegna</h3>
       <p>Ogni ristrutturazione completa passa dalle stesse fasi, anche se ogni casa ha le sue sorprese. Questo è un cantiere vero, seguito da noi dall'inizio alla fine — i video sono girati sul posto, non ricostruzioni.</p>
+      <div class="case-videos">
+        <video controls playsinline preload="metadata" poster="img/casi/completa-demolizione.jpg"><source src="video/completa-demolizione.mp4" type="video/mp4"></video>
+        <p class="case-video-cap">Demolizione e impianti a vista, prima di iniziare i lavori.</p>
+        <video controls playsinline preload="metadata" poster="img/casi/completa-muratura.jpg"><source src="video/completa-muratura.mp4" type="video/mp4"></video>
+        <p class="case-video-cap">La nuova muratura, tirata su stanza per stanza.</p>
+        <video controls playsinline preload="metadata" poster="img/casi/completa-parete-rossa.jpg"><source src="video/completa-parete-rossa.mp4" type="video/mp4"></video>
+        <p class="case-video-cap">L'ambiente finito, con parete tinteggiata e pavimento posato.</p>
+      </div>
+      <h4>Alcune foto dal cantiere</h4>
+      <div class="case-album">
+        <button class="gallery-item" data-full="img/casi/completa-demolizione.jpg"><img src="img/casi/completa-demolizione.jpg" alt="Demolizione e impianti a vista" loading="lazy"></button>
+        <button class="gallery-item" data-full="img/casi/completa-muratura.jpg"><img src="img/casi/completa-muratura.jpg" alt="Muratura grezza" loading="lazy"></button>
+        <button class="gallery-item" data-full="img/casi/completa-parete-rossa.jpg"><img src="img/casi/completa-parete-rossa.jpg" alt="Camera finita con parete rossa" loading="lazy"></button>
+      </div>
       <h4>Come si presentava il cantiere</h4>
       <ul>
         <li><strong>Impianti a vista.</strong> Tubazioni e cavi scoperti prima di essere ricoperti dai nuovi intonaci: è la fase in cui si decide come "vivrà" la casa per i prossimi vent'anni.</li>
@@ -593,6 +588,20 @@ body.modal-open{overflow:hidden}
       <span class="meta">Progetto reale · Bagno e rivestimenti</span>
       <h3>Bagno e rivestimenti: la cura sta nel dettaglio</h3>
       <p>Un bagno si giudica da vicino: dai tagli delle piastrelle, dagli allineamenti, da come la luce si riflette sulle superfici. Questo progetto lo racconta passo per passo, con i video girati durante la posa.</p>
+      <div class="case-videos">
+        <video controls playsinline preload="metadata" poster="img/casi/bagno-posa-piastrelle.jpg"><source src="video/bagno-posa-piastrelle.mp4" type="video/mp4"></video>
+        <p class="case-video-cap">La posa delle piastrelle, in corso d'opera.</p>
+        <video controls playsinline preload="metadata" poster="img/casi/bagno-rivestimento-dettaglio.jpg"><source src="video/bagno-rivestimento-dettaglio.mp4" type="video/mp4"></video>
+        <p class="case-video-cap">Il dettaglio del rivestimento decorato, da vicino.</p>
+        <video controls playsinline preload="metadata" poster="img/casi/bagno-finito.jpg"><source src="video/bagno-finito.mp4" type="video/mp4"></video>
+        <p class="case-video-cap">Il bagno finito, con specchio e illuminazione integrata.</p>
+      </div>
+      <h4>Alcune foto dal cantiere</h4>
+      <div class="case-album">
+        <button class="gallery-item" data-full="img/casi/bagno-posa-piastrelle.jpg"><img src="img/casi/bagno-posa-piastrelle.jpg" alt="Posa piastrelle in bagno" loading="lazy"></button>
+        <button class="gallery-item" data-full="img/casi/bagno-rivestimento-dettaglio.jpg"><img src="img/casi/bagno-rivestimento-dettaglio.jpg" alt="Dettaglio rivestimento decorato" loading="lazy"></button>
+        <button class="gallery-item" data-full="img/casi/bagno-finito.jpg"><img src="img/casi/bagno-finito.jpg" alt="Bagno finito con specchio" loading="lazy"></button>
+      </div>
       <h4>La posa del rivestimento</h4>
       <ul>
         <li><strong>Mosaico patchwork.</strong> Piastrelle decorate diverse tra loro, posate per creare un disegno continuo — serve pazienza per far combaciare i motivi pezzo per pezzo.</li>
@@ -619,6 +628,17 @@ body.modal-open{overflow:hidden}
       <span class="meta">Progetto reale · Illuminazione e su misura</span>
       <h3>Illuminazione e su misura: i dettagli che cambiano una stanza</h3>
       <p>Non sempre serve una ristrutturazione completa per cambiare il modo in cui si vive una stanza. A volte bastano l'illuminazione giusta e un mobile pensato su misura.</p>
+      <div class="case-videos">
+        <video controls playsinline preload="metadata" poster="img/casi/illuminazione-veletta.jpg"><source src="video/illuminazione-veletta.mp4" type="video/mp4"></video>
+        <p class="case-video-cap">La veletta con illuminazione a incasso, appena realizzata.</p>
+        <video controls playsinline preload="metadata" poster="img/casi/cabina-armadio.jpg"><source src="video/cabina-armadio.mp4" type="video/mp4"></video>
+        <p class="case-video-cap">La cabina armadio su misura, finita.</p>
+      </div>
+      <h4>Alcune foto dal cantiere</h4>
+      <div class="case-album">
+        <button class="gallery-item" data-full="img/casi/illuminazione-veletta.jpg"><img src="img/casi/illuminazione-veletta.jpg" alt="Veletta con illuminazione a incasso" loading="lazy"></button>
+        <button class="gallery-item" data-full="img/casi/cabina-armadio.jpg"><img src="img/casi/cabina-armadio.jpg" alt="Cabina armadio su misura" loading="lazy"></button>
+      </div>
       <h4>Velette con illuminazione a incasso</h4>
       <p>Una veletta è un controsoffitto perimetrale che nasconde una striscia LED: la luce esce indiretta, illumina il soffitto e dà profondità alla stanza senza che si veda alcuna lampada. Il risultato è una luce morbida, diffusa, senza i punti troppo accesi tipici dei faretti tradizionali.</p>
       <h4>Cabina armadio su misura</h4>
@@ -1464,9 +1484,6 @@ function closeModal(){
 }
 document.querySelectorAll(".post-card").forEach(function(card){
   card.addEventListener("click", function(){ openModal(card.dataset.article); });
-});
-document.querySelectorAll(".case-more").forEach(function(link){
-  link.addEventListener("click", function(){ openModal(link.dataset.article); });
 });
 document.addEventListener("click", function(e){
   if(e.target.classList && e.target.classList.contains("a-close")){ closeModal(); }

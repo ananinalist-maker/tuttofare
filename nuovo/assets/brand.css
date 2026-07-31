@@ -214,10 +214,11 @@ section{padding:var(--pad) 0;border-top:1px solid var(--line);position:relative}
 .stats span{font:500 12.5px/1.5 var(--mono);color:var(--muted);letter-spacing:.03em}
 
 /* ---------- компактная лента видео с объектов ---------- */
-.media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:660px}
-.media-grid > div{overflow:hidden;border-radius:4px;background:var(--ink-2)}
-.media-grid video{width:100%;aspect-ratio:3/4;object-fit:cover;display:block}
-@media(max-width:520px){.media-grid{gap:7px}}
+.media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:720px}
+.media-grid > div,.media-grid figure{margin:0}
+.media-grid video{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;border-radius:4px;background:var(--ink-2)}
+.media-grid figcaption{font:500 10.5px/1.4 var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--muted);padding:8px 2px 0}
+@media(max-width:520px){.media-grid{gap:8px}.media-grid figcaption{font-size:9.5px;padding-top:6px}}
 
 /* ---------- grids & cards ---------- */
 .grid{display:grid;gap:20px}

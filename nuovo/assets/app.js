@@ -120,6 +120,7 @@
       });
     });
 
+    var first = true;
     function paint() {
       var ph = phases[idx];
       Array.prototype.forEach.call(bar.children, function (c, i) { c.classList.toggle('on', i === idx); });
@@ -130,8 +131,17 @@
         '<p>' + txt + '</p>' +
         (ph.pause && mode === 'do' ? '<div class="tl__pause"><b>Tempo tecnico:</b> ' + ph.pause + '</div>' : '');
       if (prog) prog.style.width = ((idx + 1) / phases.length * 100) + '%';
+
+      // Двигаем ТОЛЬКО горизонтальную ленту фаз, и только после клика.
+      // scrollIntoView здесь утаскивал вниз всю страницу при загрузке.
       var active = bar.children[idx];
-      if (active && active.scrollIntoView) active.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: reduce ? 'auto' : 'smooth' });
+      if (active && !first && bar.scrollTo) {
+        bar.scrollTo({
+          left: active.offsetLeft - (bar.clientWidth - active.clientWidth) / 2,
+          behavior: reduce ? 'auto' : 'smooth'
+        });
+      }
+      first = false;
     }
     paint();
   }

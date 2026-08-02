@@ -13,10 +13,10 @@
 ## Pagine principali
 
 - [Home](https://tuttofare-roma.it/): servizi, calcolatore preventivo, timeline del cantiere, FAQ, contatti
-- [Privati](https://tuttofare-roma.it/privati.html): ristrutturazioni e bagni di precisione per chi rifà casa propria
-- [Investitori](https://tuttofare-roma.it/investitori.html): ristrutturazione di immobili da affittare o rivendere, prezzo bloccato e data certa
-- [Partner](https://tuttofare-roma.it/partner.html): impresa esecutrice per studi di architettura, geometri e agenzie immobiliari
-- [Guide](https://tuttofare-roma.it/guide/): indice di tutte le guide pratiche sulla ristrutturazione
+- [Privati](https://tuttofare-roma.it/privati): ristrutturazioni e bagni di precisione per chi rifà casa propria
+- [Investitori](https://tuttofare-roma.it/investitori): ristrutturazione di immobili da affittare o rivendere, prezzo bloccato e data certa
+- [Partner](https://tuttofare-roma.it/partner): impresa esecutrice per studi di architettura, geometri e agenzie immobiliari
+- [Guide](https://tuttofare-roma.it/guide): indice di tutte le guide pratiche sulla ristrutturazione
 
 ## Guide
 

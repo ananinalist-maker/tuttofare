@@ -376,9 +376,9 @@ footer{background:var(--bg0);border-top:1px solid var(--line-d);padding:50px 0;c
     </a>
     <nav class="audience-tabs">
       <a href="#top" class="active">Tutti</a>
-      <a href="privati.html">Privati</a>
-      <a href="investitori.html">Investitori</a>
-      <a href="partner.html">Partner</a>
+      <a href="/privati">Privati</a>
+      <a href="/investitori">Investitori</a>
+      <a href="/partner">Partner</a>
       <a href="#calcolatore">Preventivo</a>
     </nav>
     <a class="btn btn-wa" href="https://wa.me/393894481853?text=Buongiorno%2C%20vorrei%20un%20preventivo%20gratuito." target="_blank" rel="noopener">
@@ -580,19 +580,19 @@ footer{background:var(--bg0);border-top:1px solid var(--line-d);padding:50px 0;c
   </div>
   <div class="wrap" style="padding:0">
     <div class="persona-grid">
-      <a class="persona rv rv-1" href="privati.html">
+      <a class="persona rv rv-1" href="/privati">
         <span class="pnum">01 · Privati</span>
         <blockquote>«Muri storti e piastrelle a vuoto.»</blockquote>
         <p>Non sai a chi affidarti. Ti mostriamo il lavoro prima, non promesse.</p>
         <span class="cta">Vedi come lavoriamo →</span>
       </a>
-      <a class="persona rv rv-2" href="investitori.html">
+      <a class="persona rv rv-2" href="/investitori">
         <span class="pnum">02 · Investitori</span>
         <blockquote>«Ogni mese di fermo è un canone perso.»</blockquote>
         <p>Prezzo bloccato, data certa, documenti per il rogito.</p>
         <span class="cta">Pronto da affittare →</span>
       </a>
-      <a class="persona rv rv-3" href="partner.html">
+      <a class="persona rv rv-3" href="/partner">
         <span class="pnum">03 · Partner</span>
         <blockquote>«Capomastro suo malgrado.»</blockquote>
         <p>Cantiere pilota, report settimanale, il cliente resta vostro.</p>
@@ -604,8 +604,11 @@ footer{background:var(--bg0);border-top:1px solid var(--line-d);padding:50px 0;c
 
 <style>
 .gallery-album{margin-top:10px}
-.gallery-toggle{font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:var(--navy);background:var(--white);border:1px solid var(--line);padding:14px 22px;max-width:420px;cursor:pointer;border-radius:4px}
-.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px;margin-top:20px}
+.gallery-toggle{position:relative;font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--hat);background:rgba(245,184,46,.08);border:1px solid rgba(245,184,46,.4);padding:15px 46px 15px 22px;max-width:420px;cursor:pointer;border-radius:4px;transition:background .18s ease, border-color .18s ease}
+.gallery-toggle:hover{background:rgba(245,184,46,.15);border-color:var(--hat)}
+.gallery-toggle::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:18px;transition:transform .18s ease}
+.gallery-album[open] .gallery-toggle::after{transform:translateY(-50%) rotate(45deg)}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:2px;margin-top:20px;background:var(--line-d);border:1px solid var(--line-d)}
 .gallery-item{aspect-ratio:1/1;overflow:hidden;background:#E8ECF3;cursor:pointer;border:none;padding:0}
 .gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
 .gallery-item:hover img{transform:scale(1.08)}
@@ -618,14 +621,20 @@ footer{background:var(--bg0);border-top:1px solid var(--line-d);padding:50px 0;c
 @media(max-width:820px){.contact-grid{grid-template-columns:1fr}}
 .contact-list{list-style:none;margin-top:22px}
 .contact-list li{display:flex;gap:12px;margin-bottom:14px;font-size:16px;color:rgba(255,255,255,.88)}
-.contact-list li::before{content:">";font-family:'IBM Plex Mono',monospace;color:var(--wa);flex:none;font-weight:700}
+.contact-list li::before{content:">";font-family:'IBM Plex Mono',monospace;color:var(--hat);flex:none;font-weight:700}
 .contact-list a{color:#fff}
-.form-card{background:var(--white);color:#1B2330;padding:28px;border-radius:4px;border-top:6px solid var(--wa)}
+.form-card{background:var(--white);color:#1B2330;padding:28px;border-radius:4px;border-left:4px solid var(--hat)}
 .form-card .field{margin-bottom:16px}
 .form-card .field label{display:block;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--steel);margin-bottom:7px}
 .form-card input,.form-card select,.form-card textarea{width:100%;padding:12px 13px;border:1px solid var(--line);border-radius:4px;font-family:'IBM Plex Sans',sans-serif;font-size:15px;background:var(--paper);color:#1B2330}
 .form-card textarea{min-height:96px;resize:vertical}
 .form-note{font-size:12.5px;color:var(--steel);margin-top:12px}
+.zone-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:24px}
+.zone-card{background:var(--white);border:1px solid var(--line);border-left:4px solid var(--navy);padding:26px}
+.zone-card h3{font-family:'IBM Plex Mono',monospace;font-size:13px;text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px;color:var(--navy)}
+.zone-card p{font-size:14.5px;line-height:1.7;color:var(--steel)}
+.zone-card.zone-cta{border-left-color:var(--hat);display:flex;flex-direction:column}
+.zone-card.zone-cta .btn{margin-top:auto;padding-top:16px}
 </style>
 
 <!-- ============ GUIDE / BLOG ============ -->
@@ -649,7 +658,7 @@ footer{background:var(--bg0);border-top:1px solid var(--line-d);padding:50px 0;c
       <a class="post-card rv rv-3" href="/guide/ristrutturazione-roma-nord"><div class="post-img"><img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?fm=jpg&q=58&w=800&auto=format&fit=crop" alt="Ristrutturazione a Roma Nord" loading="lazy"></div><div class="post-body"><span class="cat">Zona</span><h3>Ristrutturare casa a Roma Nord: cosa cambia rispetto al centro</h3><p>Cassia, Flaminia, Fleming, Prima Porta: differenze, costi medi e tempi.</p><span class="more">Leggi la guida &rarr;</span></div></a>
     </div>
     <div style="text-align:center;margin-top:32px" class="rv">
-      <a href="/guide/" style="display:inline-flex;align-items:center;gap:10px;background:var(--navy);color:#fff;text-decoration:none;padding:16px 32px;border-radius:6px;font-weight:700;font-family:'IBM Plex Sans',sans-serif;font-size:15px">Vedi tutte le 17 guide &rarr;</a>
+      <a href="/guide" style="display:inline-flex;align-items:center;gap:10px;background:var(--navy);color:#fff;text-decoration:none;padding:16px 32px;border-radius:6px;font-weight:700;font-family:'IBM Plex Sans',sans-serif;font-size:15px">Vedi tutte le 17 guide &rarr;</a>
       <p style="margin:14px 0 0;color:var(--steel);font-size:13px">Guide su bagno, tetto, impianti, permessi CILA/SCIA, anche per Bracciano, Sutri, Nepi, Civita Castellana, Roma Nord e Tuscia.</p>
     </div>
   </div>
@@ -749,19 +758,19 @@ footer{background:var(--bg0);border-top:1px solid var(--line-d);padding:50px 0;c
     <span class="eyebrow rv">Zone di intervento</span>
     <h2 class="rv" style="margin-bottom:8px">Dove lavoriamo</h2>
     <p class="lede rv" style="margin-bottom:20px">Sopralluogo gratuito in tutta la provincia di Roma e di Viterbo. Ecco i comuni dove interveniamo piu spesso:</p>
-    <div class="rv" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;margin-top:20px">
-      <div>
-        <h3 style="font-family:'IBM Plex Mono',monospace;font-size:14px;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:10px;color:var(--navy)">Roma e dintorni</h3>
-        <p style="font-size:15px;line-height:1.7">Roma centro storico &middot; Roma Nord (Cassia, Flaminia, Prima Porta) &middot; Roma Sud &middot; Bracciano &middot; Anguillara Sabazia &middot; Trevignano Romano &middot; Formello &middot; Campagnano di Roma &middot; Sacrofano &middot; Riano &middot; Castelnuovo di Porto &middot; Morlupo</p>
+    <div class="zone-grid rv">
+      <div class="zone-card">
+        <h3>Roma e dintorni</h3>
+        <p>Roma centro storico &middot; Roma Nord (Cassia, Flaminia, Prima Porta) &middot; Roma Sud &middot; Bracciano &middot; Anguillara Sabazia &middot; Trevignano Romano &middot; Formello &middot; Campagnano di Roma &middot; Sacrofano &middot; Riano &middot; Castelnuovo di Porto &middot; Morlupo</p>
       </div>
-      <div>
-        <h3 style="font-family:'IBM Plex Mono',monospace;font-size:14px;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:10px;color:var(--navy)">Provincia di Viterbo</h3>
-        <p style="font-size:15px;line-height:1.7">Viterbo citta &middot; Sutri &middot; Nepi &middot; Civita Castellana &middot; Vetralla &middot; Capranica &middot; Ronciglione &middot; Monterosi &middot; Caprarola &middot; Bassano Romano &middot; Oriolo Romano &middot; Fabrica di Roma &middot; Castel Sant'Elia</p>
+      <div class="zone-card">
+        <h3>Provincia di Viterbo</h3>
+        <p>Viterbo citta &middot; Sutri &middot; Nepi &middot; Civita Castellana &middot; Vetralla &middot; Capranica &middot; Ronciglione &middot; Monterosi &middot; Caprarola &middot; Bassano Romano &middot; Oriolo Romano &middot; Fabrica di Roma &middot; Castel Sant'Elia</p>
       </div>
-      <div>
-        <h3 style="font-family:'IBM Plex Mono',monospace;font-size:14px;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:10px;color:var(--navy)">Non vedi il tuo comune?</h3>
-        <p style="font-size:15px;line-height:1.7">Scrivici comunque: copriamo tutta la provincia di Roma e di Viterbo. Il sopralluogo resta gratuito ovunque, dal pavimento al tetto.</p>
-        <a class="btn btn-wa" href="https://wa.me/393894481853?text=Buongiorno%2C%20vorrei%20sapere%20se%20coprite%20la%20mia%20zona." target="_blank" rel="noopener" style="margin-top:12px;display:inline-flex">Verifica la tua zona</a>
+      <div class="zone-card zone-cta">
+        <h3>Non vedi il tuo comune?</h3>
+        <p>Scrivici comunque: copriamo tutta la provincia di Roma e di Viterbo. Il sopralluogo resta gratuito ovunque, dal pavimento al tetto.</p>
+        <a class="btn btn-wa" href="https://wa.me/393894481853?text=Buongiorno%2C%20vorrei%20sapere%20se%20coprite%20la%20mia%20zona." target="_blank" rel="noopener">Verifica la tua zona</a>
       </div>
     </div>
   </div>

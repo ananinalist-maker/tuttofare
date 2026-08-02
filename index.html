@@ -467,12 +467,18 @@ footer{background:var(--bg0);border-top:1px solid var(--line-d);padding:50px 0;c
           <button class="opt" data-v="bagno">Bagno chiavi in mano</button>
           <button class="opt" data-v="bagnoxl">Bagno grande formato</button>
           <button class="opt" data-v="reddito">Immobile da reddito</button>
+          <button class="opt opt-altro" data-v="altro-menu">Altro lavoro / non lo trovo</button>
+        </div>
+      </div>
+      <div class="calc-field-group" id="c-altro-menu-group" style="display:none">
+        <label class="calc-label">Quale, nello specifico</label>
+        <div class="opt-grid" id="c-altro-menu">
           <button class="opt" data-v="idraulica">Idraulica ed elettrico</button>
           <button class="opt" data-v="pavimenti">Pavimenti e rivestimenti</button>
           <button class="opt" data-v="pitture">Pitture e cartongesso</button>
           <button class="opt" data-v="tetti">Tetti e facciate</button>
           <button class="opt" data-v="clima">Climatizzazione</button>
-          <button class="opt opt-altro" data-v="altro">Non lo trovo / altro lavoro</button>
+          <button class="opt opt-altro" data-v="altro">Altro lavoro, lo descrivo</button>
         </div>
       </div>
       <div class="calc-field-group" id="c-mq-group">
@@ -859,29 +865,36 @@ var QUICK = {
   clima:     "Climatizzazione"
 };
 var LABOR_ONLY_FACTOR = 0.45;
-var state = { tipo:'completa', zona:'roma', mq:80, materiali:'con' };
+var state = { tipo:'completa', sub:null, zona:'roma', mq:80, materiali:'con' };
 
 function fmt(n){ return Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.'); }
 
 function renderCalc(){
-  var isQuick = !!QUICK[state.tipo];
-  var isAltro = state.tipo === 'altro';
-  var isFreeText = isQuick || isAltro;
+  var isAltroMenu = state.tipo === 'altro-menu';
+  var isQuick = isAltroMenu && !!QUICK[state.sub];
+  var isSubAltro = isAltroMenu && state.sub === 'altro';
+  var hasSub = isQuick || isSubAltro;
 
-  document.getElementById('c-altro-group').style.display = isFreeText ? 'block' : 'none';
-  document.getElementById('c-mq-group').style.display = (!isFreeText && CALC[state.tipo].needsMq) ? 'block' : 'none';
-  document.getElementById('c-materiali-group').style.display = isFreeText ? 'none' : 'block';
-  document.getElementById('c-zona-group').style.display = isFreeText ? 'none' : 'block';
-  document.getElementById('c-result').style.display = isFreeText ? 'none' : 'block';
+  document.getElementById('c-altro-menu-group').style.display = isAltroMenu ? 'block' : 'none';
+  document.getElementById('c-altro-group').style.display = hasSub ? 'block' : 'none';
+  document.getElementById('c-mq-group').style.display = (!isAltroMenu && CALC[state.tipo].needsMq) ? 'block' : 'none';
+  document.getElementById('c-materiali-group').style.display = isAltroMenu ? 'none' : 'block';
+  document.getElementById('c-zona-group').style.display = isAltroMenu ? 'none' : 'block';
+  document.getElementById('c-result').style.display = isAltroMenu ? 'none' : 'block';
+  document.getElementById('c-wa').style.display = (isAltroMenu && !hasSub) ? 'none' : 'inline-flex';
 
-  if(isFreeText){
+  if(isAltroMenu){
+    if(!hasSub){
+      document.getElementById('c-note').textContent = "Scegli il lavoro dalla lista qui sopra: ti prepariamo subito il messaggio da mandare su WhatsApp.";
+      return;
+    }
     var desc = document.getElementById('c-altro-desc').value.trim();
     document.getElementById('c-altro-label').textContent = isQuick
       ? "Aggiungi dettagli (facoltativo)"
       : "Descrivi il lavoro che ti serve";
     document.getElementById('c-note').textContent = "Non abbiamo ancora una fascia di prezzo verificata per questo lavoro: mandaci due righe, ti rispondiamo con una valutazione onesta.";
     var msg = isQuick
-      ? "Buongiorno! Vorrei un preventivo per: " + QUICK[state.tipo] + (desc ? "\nDettagli: " + desc : "")
+      ? "Buongiorno! Vorrei un preventivo per: " + QUICK[state.sub] + (desc ? "\nDettagli: " + desc : "")
       : "Buongiorno! Non ho trovato il mio lavoro nel calcolatore del sito Tuttofare.\nDescrizione: " + (desc || "[da compilare]") + "\nVorrei una valutazione.";
     document.getElementById('c-wa').href = "https://wa.me/393894481853?text=" + encodeURIComponent(msg);
     return;
@@ -916,6 +929,17 @@ document.querySelectorAll('#c-tipo .opt').forEach(function(btn){
     document.querySelectorAll('#c-tipo .opt').forEach(function(b){ b.classList.remove('active'); });
     btn.classList.add('active');
     state.tipo = btn.dataset.v;
+    state.sub = null;
+    document.querySelectorAll('#c-altro-menu .opt').forEach(function(b){ b.classList.remove('active'); });
+    document.getElementById('c-altro-desc').value = '';
+    renderCalc();
+  });
+});
+document.querySelectorAll('#c-altro-menu .opt').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    document.querySelectorAll('#c-altro-menu .opt').forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+    state.sub = btn.dataset.v;
     renderCalc();
   });
 });

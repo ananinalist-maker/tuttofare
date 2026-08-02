@@ -204,7 +204,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(10,15,28,.86);backdrop-f
 @media(max-width:980px){.audience-tabs{display:none}}
 
 /* ---------- HERO ---------- */
-.hero{position:relative;color:#fff;padding:0;overflow:hidden;min-height:94vh;display:flex;align-items:flex-end}
+.hero{position:relative;width:100%;color:#fff;padding:0;overflow:hidden;min-height:94vh;display:flex;align-items:flex-end}
 .hero-stage{position:absolute;inset:-2%;z-index:0;transition:transform .3s ease-out}
 .hero-slide{position:absolute;inset:0;opacity:0;transition:opacity 1.2s ease}
 .hero-slide.active{opacity:1}
@@ -840,13 +840,15 @@ heroDotBtns.forEach(function(btn){
 autoHero();
 
 var heroStage = document.getElementById('hero-stage');
-document.getElementById('hero').addEventListener('mousemove', function(e){
-  var r = this.getBoundingClientRect();
-  var x = (e.clientX - r.left) / r.width - .5;
-  var y = (e.clientY - r.top) / r.height - .5;
-  heroStage.style.transform = 'translate(' + (-x*16) + 'px,' + (-y*10) + 'px)';
-});
-document.getElementById('hero').addEventListener('mouseleave', function(){ heroStage.style.transform = 'translate(0,0)'; });
+if(window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches){
+  document.getElementById('hero').addEventListener('mousemove', function(e){
+    var r = this.getBoundingClientRect();
+    var x = (e.clientX - r.left) / r.width - .5;
+    var y = (e.clientY - r.top) / r.height - .5;
+    heroStage.style.transform = 'translate(' + (-x*16) + 'px,' + (-y*10) + 'px)';
+  });
+  document.getElementById('hero').addEventListener('mouseleave', function(){ heroStage.style.transform = 'translate(0,0)'; });
+}
 
 // calculator — prezzi di lancio 2026 (fonte: tuttofare-nuovo / Bagno Blindato)
 // NB: "reddito" (immobile a reddito) è una stima derivata dall'unico esempio reale

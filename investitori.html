@@ -37,7 +37,7 @@ img{max-width:100%;display:block}
 .rv-1{transition-delay:.08s}.rv-2{transition-delay:.16s}.rv-3{transition-delay:.24s}
 .btn{display:inline-flex;align-items:center;gap:10px;font-weight:600;text-decoration:none;border-radius:4px;padding:15px 26px;font-size:16px;border:none;cursor:pointer;font-family:'IBM Plex Sans',sans-serif;transition:background .18s ease, transform .18s ease}
 .btn:active{transform:scale(.98)}
-.btn-wa{background:var(--wa);color:#fff}
+.btn-wa{background:var(--wa);color:var(--bg0)}
 .btn-wa:hover{background:var(--wa-dark)}
 .btn-ghost{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.5);backdrop-filter:blur(6px)}
 .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.16)}
@@ -161,7 +161,7 @@ footer{background:var(--bg0);border-top:1px solid var(--line-d);padding:50px 0;c
       <a href="#faq">Domande</a>
       <a href="/guide">Blog</a>
     </nav>
-    <a class="btn btn-cta-gold" href="https://wa.me/393894481853?text=Buongiorno%2C%20vorrei%20un%20preventivo%20gratuito." target="_blank" rel="noopener">Preventivo</a>
+    <a class="btn btn-cta-gold" href="/#calcolatore">Preventivo</a>
     <button class="menu-toggle" id="menu-toggle" aria-label="Menu" aria-expanded="false">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
@@ -174,7 +174,7 @@ footer{background:var(--bg0);border-top:1px solid var(--line-d);padding:50px 0;c
       <a href="/#calcolatore">Preventivo</a>
       <a href="#faq">Domande</a>
       <a href="/guide">Blog</a>
-    <a class="mobile-menu-cta" href="https://wa.me/393894481853?text=Buongiorno%2C%20vorrei%20un%20preventivo%20gratuito." target="_blank" rel="noopener">Preventivo</a>
+    <a class="mobile-menu-cta" href="/#calcolatore">Preventivo</a>
   </div>
 </header>
 
@@ -313,7 +313,7 @@ footer{background:var(--bg0);border-top:1px solid var(--line-d);padding:50px 0;c
   <div class="wrap foot">
     <b>TUTTOFARE</b>
     <div>Ristrutturazioni per immobili a reddito, Roma e provincia di Viterbo · WhatsApp 389 448 1853</div>
-    <div>&copy; 2026 Tuttofare</div>
+    <div>&copy; 2026 Tuttofare &middot; <a href="https://share.google/HWAgTIHzjtyk2pH0P" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">Trovaci su Google</a></div>
     <div class="foot-credit">Sito creato da Anna — scrivimi su Telegram <a href="https://t.me/meannush" target="_blank" rel="noopener" style="color:inherit">@meannush</a> se vuoi un sito così per la tua attività.</div>
   </div>
 </footer>
@@ -332,9 +332,20 @@ if(menuToggle && mobileMenu){
   menuToggle.addEventListener('click', function(){
     var isOpen = mobileMenu.classList.toggle('open');
     menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    if(isOpen){
+      var firstLink = mobileMenu.querySelector('a');
+      if(firstLink) firstLink.focus();
+    }
   });
   mobileMenu.querySelectorAll('a').forEach(function(a){
     a.addEventListener('click', function(){ mobileMenu.classList.remove('open'); menuToggle.setAttribute('aria-expanded','false'); });
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && mobileMenu.classList.contains('open')){
+      mobileMenu.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded','false');
+      menuToggle.focus();
+    }
   });
 }
 

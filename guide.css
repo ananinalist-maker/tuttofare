@@ -37,7 +37,7 @@ article.guide a{color:var(--navy);text-decoration:underline}
 .cta{background:var(--deep);color:#fff;padding:28px 24px;border-radius:4px;border-left:3px solid var(--yellow);margin:36px 0 12px}
 .cta p{color:rgba(255,255,255,.92);margin:0 0 18px;font-size:16px}
 .cta strong{color:#fff}
-.btn-wa{display:inline-flex;align-items:center;gap:8px;background:var(--wa);color:#fff;text-decoration:none;padding:14px 22px;border-radius:6px;font-weight:700;font-family:'IBM Plex Sans',sans-serif;font-size:15px;transition:background .15s}
+.btn-wa{display:inline-flex;align-items:center;gap:8px;background:var(--wa);color:var(--bg0);text-decoration:none;padding:14px 22px;border-radius:6px;font-weight:700;font-family:'IBM Plex Sans',sans-serif;font-size:15px;transition:background .15s}
 .btn-wa:hover{background:var(--wa-dark);color:#fff;text-decoration:none}
 .btn-wa svg{width:18px;height:18px}
 .related{background:#fff;padding:28px 24px;border-radius:4px;margin:48px 0 12px;border:1px solid var(--line);border-left:3px solid var(--navy)}

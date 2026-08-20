@@ -3,7 +3,12 @@
   <url><loc>https://tuttofare-roma.it/</loc><lastmod>2026-08-06</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://tuttofare-roma.it/privati</loc><lastmod>2026-08-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://tuttofare-roma.it/investitori</loc><lastmod>2026-08-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://tuttofare-roma.it/partner</loc><lastmod>2026-08-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tuttofare-roma.it/partner</loc>
+</url>
+<url>
+<loc>https://tuttofare-roma.it/privacy</loc>
+<changefreq>yearly</changefreq>
+<priority>0.3</priority><lastmod>2026-08-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://tuttofare-roma.it/guide</loc><lastmod>2026-08-07</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://tuttofare-roma.it/guide/idraulico-urgente-roma</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://tuttofare-roma.it/guide/imbianchino-roma</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>

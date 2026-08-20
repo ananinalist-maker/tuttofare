@@ -349,7 +349,7 @@ footer{background:var(--bg0);border-top:1px solid var(--line-d);padding:50px 0;c
   <div class="wrap foot">
     <b>TUTTOFARE</b>
     <div>Ristrutturazioni per immobili a reddito, Roma e provincia di Viterbo · WhatsApp 389 448 1853</div>
-    <div>&copy; 2026 Tuttofare &middot; <a href="https://share.google/HWAgTIHzjtyk2pH0P" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">Trovaci su Google</a> &middot; <a href="https://www.instagram.com/tuttofare.roma/" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">Instagram</a></div>
+    <div><a href="/privacy" style="color:inherit;text-decoration:underline">Privacy</a> &middot; &copy; 2026 Tuttofare &middot; <a href="https://share.google/HWAgTIHzjtyk2pH0P" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">Trovaci su Google</a> &middot; <a href="https://www.instagram.com/tuttofare.roma/" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">Instagram</a></div>
     <div class="foot-credit">Sito creato da Anna — scrivimi su Telegram <a href="https://t.me/meannush" target="_blank" rel="noopener" style="color:inherit">@meannush</a> se vuoi un sito così per la tua attività.</div>
   </div>
 </footer>
@@ -394,6 +394,38 @@ rvEls.forEach(function(el){ io.observe(el); });
 var topFloat = document.getElementById('top-float');
 window.addEventListener('scroll', function(){ topFloat.classList.toggle('show', window.scrollY > 600); });
 topFloat.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+</script>
+<style>
+#tfck{position:fixed;left:16px;right:16px;bottom:16px;z-index:9999;max-width:660px;margin:0 auto;
+background:#0E1730;color:#EDEFF3;border:1px solid rgba(255,255,255,.16);border-radius:12px;
+padding:18px 20px;box-shadow:0 12px 40px rgba(0,0,0,.45);font-family:'IBM Plex Sans',system-ui,sans-serif;
+font-size:14.5px;line-height:1.55;display:none}
+#tfck.on{display:block}
+#tfck p{margin:0 0 14px;color:#C9D2DD}
+#tfck a{color:#F5B82E}
+#tfck .r{display:flex;gap:10px;flex-wrap:wrap}
+#tfck button{cursor:pointer;border:0;border-radius:8px;padding:10px 18px;font:600 14px/1 'IBM Plex Sans',system-ui,sans-serif}
+#tfck .ok{background:#F5B82E;color:#0A0F1C}
+#tfck .no{background:transparent;color:#C9D2DD;border:1px solid rgba(255,255,255,.24)}
+@media(max-width:520px){#tfck button{flex:1 1 100%}}
+</style>
+<div id="tfck" role="dialog" aria-label="Cookie">
+<p>Usiamo cookie tecnici e, solo con il tuo consenso, cookie statistici per capire come viene usato il sito.
+Leggi la <a href="/privacy">Privacy e Cookie Policy</a>.</p>
+<div class="r">
+<button class="ok" id="tfckY">Accetta</button>
+<button class="no" id="tfckN">Solo necessari</button>
+</div>
+</div>
+<script>
+(function(){var K='tf_consent',b=document.getElementById('tfck');if(!b)return;
+var v=null;try{v=localStorage.getItem(K);}catch(e){}
+if(!v)b.classList.add('on');
+function set(x){try{localStorage.setItem(K,x);}catch(e){}b.classList.remove('on');
+if(x==='all'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted'});if(window.tfLoadGA)tfLoadGA();}}
+document.getElementById('tfckY').onclick=function(){set('all');};
+document.getElementById('tfckN').onclick=function(){set('necessary');};
+})();
 </script>
 </body>
 </html>

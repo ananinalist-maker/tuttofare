@@ -29,7 +29,8 @@ gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user
 window.tfLoadGA=function(){if(window.__tfGA)return;window.__tfGA=1;
 var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-K2ZMN01S3M';
 document.head.appendChild(s);gtag('js',new Date());gtag('config','G-K2ZMN01S3M',{anonymize_ip:true});};
-try{if(localStorage.getItem(K)==='all'){gtag('consent','update',{analytics_storage:'granted'});tfLoadGA();}}catch(e){}
+window.tfLoadPixel=function(){if(window.__tfPX)return;window.__tfPX=1;!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','943692917992828');fbq('track','PageView');};
+try{if(localStorage.getItem(K)==='all'){gtag('consent','update',{analytics_storage:'granted',ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted'});tfLoadGA();tfLoadPixel();}}catch(e){}
 })();
 </script>
 <script type="application/ld+json">
@@ -157,7 +158,7 @@ font-size:14.5px;line-height:1.55;display:none}
 @media(max-width:520px){#tfck button{flex:1 1 100%}}
 </style>
 <div id="tfck" role="dialog" aria-label="Cookie">
-<p>Usiamo cookie tecnici e, solo con il tuo consenso, cookie statistici per capire come viene usato il sito.
+<p>Usiamo cookie tecnici e, solo con il tuo consenso, cookie di statistica e di misurazione pubblicitaria per capire come viene usato il sito.
 Leggi la <a href="/privacy">Privacy e Cookie Policy</a>.</p>
 <div class="r">
 <button class="ok" id="tfckY">Accetta</button>
@@ -169,7 +170,7 @@ Leggi la <a href="/privacy">Privacy e Cookie Policy</a>.</p>
 var v=null;try{v=localStorage.getItem(K);}catch(e){}
 if(!v)b.classList.add('on');
 function set(x){try{localStorage.setItem(K,x);}catch(e){}b.classList.remove('on');
-if(x==='all'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted'});if(window.tfLoadGA)tfLoadGA();}}
+if(x==='all'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted',ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted'});if(window.tfLoadGA)tfLoadGA();if(window.tfLoadPixel)tfLoadPixel();}}
 document.getElementById('tfckY').onclick=function(){set('all');};
 document.getElementById('tfckN').onclick=function(){set('necessary');};
 })();

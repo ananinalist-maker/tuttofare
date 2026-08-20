@@ -82,13 +82,14 @@ footer a{color:inherit;text-decoration:underline}
 <tr><td>Esecuzione del contratto e dei lavori</td><td>Contratto (art. 6.1.b)</td><td>10 anni, per obblighi civilistici e fiscali</td></tr>
 <tr><td>Obblighi di legge, fatturazione, conformit&agrave;</td><td>Obbligo legale (art. 6.1.c)</td><td>10 anni</td></tr>
 <tr><td>Statistiche di utilizzo del sito</td><td>Consenso (art. 6.1.a)</td><td>Fino a 14 mesi</td></tr>
+<tr><td>Misurazione delle campagne pubblicitarie su Facebook e Instagram</td><td>Consenso (art. 6.1.a)</td><td>Fino a 13 mesi</td></tr>
 </table>
 </div>
 
 <h2>4. A chi comunichiamo i dati</h2>
 <p>Non vendiamo e non cediamo i tuoi dati a terzi per finalit&agrave; di marketing. Li condividiamo soltanto con soggetti che ci forniscono servizi necessari e che agiscono come responsabili del trattamento:</p>
 <ul>
-<li><strong>Meta Platforms Ireland Ltd.</strong> &mdash; WhatsApp Business, moduli pubblicitari su Facebook e Instagram.</li>
+<li><strong>Meta Platforms Ireland Ltd.</strong> &mdash; WhatsApp Business, moduli pubblicitari su Facebook e Instagram, e Meta Pixel per la misurazione delle campagne, solo previo tuo consenso.</li>
 <li><strong>Google Ireland Ltd.</strong> &mdash; Google Analytics 4, statistiche di utilizzo del sito, solo previo tuo consenso.</li>
 <li><strong>Vercel Inc.</strong> &mdash; hosting del sito e conteggi aggregati senza cookie.</li>
 <li>Professionisti e fornitori coinvolti nei lavori, quando serve per eseguirli, e il commercialista per gli adempimenti fiscali.</li>
@@ -102,6 +103,7 @@ footer a{color:inherit;text-decoration:underline}
 <tr><th>Tipo</th><th>Cosa fa</th><th>Consenso</th></tr>
 <tr><td>Tecnici</td><td>Ricordano la tua scelta sui cookie e permettono al sito di funzionare</td><td>Non richiesto</td></tr>
 <tr><td>Statistici &mdash; Google Analytics 4</td><td>Conta le visite e mostra quali pagine sono utili. Durata fino a 14 mesi</td><td><strong>Richiesto</strong></td></tr>
+<tr><td>Marketing &mdash; Meta Pixel</td><td>Misura i risultati delle campagne su Facebook e Instagram e consente di mostrarti annunci pertinenti. Durata fino a 13 mesi</td><td><strong>Richiesto</strong></td></tr>
 <tr><td>Vercel Analytics</td><td>Conteggi aggregati, non usa cookie e non identifica le persone</td><td>Non richiesto</td></tr>
 </table>
 </div>
@@ -142,7 +144,7 @@ font-size:14.5px;line-height:1.55;display:none}
 @media(max-width:520px){#tfck button{flex:1 1 100%}}
 </style>
 <div id="tfck" role="dialog" aria-label="Cookie">
-<p>Usiamo cookie tecnici e, solo con il tuo consenso, cookie statistici per capire come viene usato il sito.
+<p>Usiamo cookie tecnici e, solo con il tuo consenso, cookie di statistica e di misurazione pubblicitaria per capire come viene usato il sito.
 Leggi la <a href="/privacy">Privacy e Cookie Policy</a>.</p>
 <div class="r">
 <button class="ok" id="tfckY">Accetta</button>
@@ -154,7 +156,7 @@ Leggi la <a href="/privacy">Privacy e Cookie Policy</a>.</p>
 var v=null;try{v=localStorage.getItem(K);}catch(e){}
 if(!v)b.classList.add('on');
 function set(x){try{localStorage.setItem(K,x);}catch(e){}b.classList.remove('on');
-if(x==='all'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted'});if(window.tfLoadGA)tfLoadGA();}}
+if(x==='all'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted',ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted'});if(window.tfLoadGA)tfLoadGA();if(window.tfLoadPixel)tfLoadPixel();}}
 document.getElementById('tfckY').onclick=function(){set('all');};
 document.getElementById('tfckN').onclick=function(){set('necessary');};
 })();

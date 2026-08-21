@@ -559,7 +559,7 @@ footer{background:var(--bg0);border-top:1px solid var(--line-d);padding:50px 0;c
         <div class="price" id="c-price">€ —</div>
         <div class="calc-details" id="c-details"></div>
       </div>
-      <p class="note" id="c-note">Stima orientativa, non un'offerta. IVA agevolata 10% esclusa. Il prezzo esatto, quello bloccato in contratto per il lavoro concordato, nasce dopo il preventivo video e l'audit tecnico.</p>
+      <p class="note" id="c-note">Stima orientativa, non un'offerta. IVA agevolata 10% esclusa. Il prezzo esatto, quello bloccato in contratto per il lavoro concordato, nasce dopo il preventivo e l'audit tecnico.</p>
       <a class="btn btn-wa" id="c-wa" href="#" target="_blank" rel="noopener">Manda i dati e ricevi il preventivo</a>
     </div>
   </div>
@@ -990,8 +990,8 @@ function renderCalc(){
   details.push(soloManodopera ? 'Solo manodopera' : 'Materiali inclusi');
   document.getElementById('c-details').innerHTML = details.map(function(d){ return '<span>'+d+'</span>'; }).join('');
   document.getElementById('c-note').textContent = soloManodopera
-    ? "Stima orientativa per la sola manodopera (materiali a parte, stima non un'offerta). Il prezzo esatto nasce dopo il preventivo video e l'audit tecnico."
-    : "Stima orientativa, non un'offerta. IVA agevolata 10% esclusa. Il prezzo esatto, quello bloccato in contratto per il lavoro concordato, nasce dopo il preventivo video e l'audit tecnico.";
+    ? "Stima orientativa per la sola manodopera (materiali a parte, stima non un'offerta). Il prezzo esatto nasce dopo il preventivo e l'audit tecnico."
+    : "Stima orientativa, non un'offerta. IVA agevolata 10% esclusa. Il prezzo esatto, quello bloccato in contratto per il lavoro concordato, nasce dopo il preventivo e l'audit tecnico.";
   var msg = "Buongiorno! Ho usato il calcolatore sul sito Tuttofare.\nLavoro: " + cfg.label +
             (cfg.needsMq ? "\nSuperficie: " + state.mq + " m²" : "") +
             "\nZona: " + (viterbo ? 'Viterbo e Tuscia' : 'Roma e provincia') +

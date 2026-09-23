@@ -1,34 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://tuttofare-roma.it/</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://tuttofare-roma.it/privati</loc><lastmod>2026-08-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://tuttofare-roma.it/investitori</loc><lastmod>2026-08-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tuttofare-roma.it/privati</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tuttofare-roma.it/investitori</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://tuttofare-roma.it/partner</loc>
 </url>
 <url>
 <loc>https://tuttofare-roma.it/privacy</loc>
 <changefreq>yearly</changefreq>
 <priority>0.3</priority><lastmod>2026-08-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://tuttofare-roma.it/guide</loc><lastmod>2026-08-07</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tuttofare-roma.it/guide</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://tuttofare-roma.it/guide/rifare-impianto-idraulico-roma</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://tuttofare-roma.it/guide/imbiancare-casa-roma</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://tuttofare-roma.it/guide/ristrutturare-bagno-roma</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://tuttofare-roma.it/guide/ristrutturazione-casa-roma</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://tuttofare-roma.it/guide/permessi-ristrutturare-casa-roma</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tuttofare-roma.it/guide/ristrutturazione-bagno-bracciano</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://tuttofare-roma.it/guide/ristrutturazione-casa-sutri</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tuttofare-roma.it/guide/ristrutturare-bagno-roma</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tuttofare-roma.it/guide/ristrutturazione-casa-roma</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tuttofare-roma.it/guide/permessi-ristrutturare-casa-roma</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tuttofare-roma.it/guide/ristrutturazione-bagno-bracciano</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tuttofare-roma.it/guide/ristrutturazione-casa-sutri</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://tuttofare-roma.it/guide/imbiancare-casa-civita-castellana</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://tuttofare-roma.it/guide/trucchi-ristrutturazione</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tuttofare-roma.it/guide/scegliere-ditta-ristrutturazioni</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tuttofare-roma.it/guide/rifare-il-tetto</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tuttofare-roma.it/guide/ristrutturazione-completa-7-passi</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tuttofare-roma.it/guide/errori-ristrutturazione</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tuttofare-roma.it/guide/muffa-pareti</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tuttofare-roma.it/guide/ristrutturazione-roma-nord</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tuttofare-roma.it/guide/trucchi-ristrutturazione</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tuttofare-roma.it/guide/scegliere-ditta-ristrutturazioni</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tuttofare-roma.it/guide/rifare-il-tetto</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tuttofare-roma.it/guide/ristrutturazione-completa-7-passi</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tuttofare-roma.it/guide/errori-ristrutturazione</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tuttofare-roma.it/guide/muffa-pareti</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tuttofare-roma.it/guide/ristrutturazione-roma-nord</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://tuttofare-roma.it/guide/imbiancare-casa-bracciano</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://tuttofare-roma.it/guide/rifare-tetto-viterbo-tuscia</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://tuttofare-roma.it/guide/ristrutturazione-bagno-roma-nord</loc><lastmod>2026-08-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tuttofare-roma.it/guide/rifare-tetto-viterbo-tuscia</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tuttofare-roma.it/guide/ristrutturazione-bagno-roma-nord</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://tuttofare-roma.it/guide/rifare-impianto-idraulico-bracciano-roma-nord</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://tuttofare-roma.it/guide/muffa-umidita-bracciano</loc><lastmod>2026-08-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://tuttofare-roma.it/guide/detrazione-fiscale-ristrutturazione</loc><lastmod>2026-08-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tuttofare-roma.it/guide/muffa-umidita-bracciano</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tuttofare-roma.it/guide/detrazione-fiscale-ristrutturazione</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tuttofare-roma.it/chi-siamo</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>

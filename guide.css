@@ -54,3 +54,16 @@ footer.site a{color:var(--yellow);text-decoration:none}
 .wa-float:hover{background:var(--wa-dark)}
 .wa-float svg{width:30px;height:30px;fill:#fff}
 @media (max-width:520px){article.guide h1{font-size:26px}article.guide h2{font-size:20px}article.guide h3{font-size:17px}.cta{padding:22px 18px}}
+/* GEO/SEO blocks (2026-09): answer-first summary, byline, data tables, scope note */
+.tldr{background:#fff;border:1px solid var(--line);border-left:4px solid var(--yellow);padding:18px 22px;border-radius:4px;margin:0 0 28px}
+.tldr h2{font-size:13px!important;letter-spacing:.14em;margin:0 0 8px!important;color:var(--mute)!important}
+.tldr p,.tldr ul{margin:0;font-size:16px}
+.tldr ul{padding-left:20px}
+.tldr li{margin:4px 0}
+.byline{font-size:13px;color:var(--mute);margin:-14px 0 22px;font-family:'IBM Plex Sans',sans-serif}
+.byline a{color:var(--mute)!important}
+article.guide table{width:100%;border-collapse:collapse;margin:18px 0 24px;font-size:15px;background:#fff}
+article.guide th,article.guide td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+article.guide th{background:#F2F4F8;color:var(--navy);font-weight:700}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.scope-note{font-size:14px;color:#444;background:#FFF8E6;border:1px solid #F0DDA8;border-left:4px solid var(--yellow);padding:12px 16px;border-radius:4px;margin:18px 0}

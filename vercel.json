@@ -1,4 +1,11 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/guide/idraulico-urgente-roma", "destination": "/guide/rifare-impianto-idraulico-roma", "permanent": true },
+    { "source": "/guide/idraulico-urgente-bracciano-roma-nord", "destination": "/guide/rifare-impianto-idraulico-bracciano-roma-nord", "permanent": true },
+    { "source": "/guide/imbianchino-roma", "destination": "/guide/imbiancare-casa-roma", "permanent": true },
+    { "source": "/guide/imbianchino-bracciano", "destination": "/guide/imbiancare-casa-bracciano", "permanent": true },
+    { "source": "/guide/imbianchino-civita-castellana", "destination": "/guide/imbiancare-casa-civita-castellana", "permanent": true }
+  ]
 }

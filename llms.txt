@@ -27,7 +27,7 @@
 ## Guide
 
 - [Ristrutturazione casa a Roma: quanto costa al m², quanto dura e che permessi servono](https://tuttofare-roma.it/guide/ristrutturazione-casa-roma): Quanto costa ristrutturare casa a Roma: prezzi medi di mercato al m², tempi per 60-130 m², permessi, cosa comprende il lavoro e come scegliere la ditta.
-- [Ristrutturare il bagno a Roma: costi, tempi, CILA ed errori da evitare](https://tuttofare-roma.it/guide/ristrutturare-bagno-roma): Rifare il bagno a Roma: quanto costa ai prezzi medi di mercato, quante settimane servono, quando serve la CILA e gli errori che costano di più.
+- [Quanto costa rifare il bagno a Roma: prezzi, tempi, CILA ed errori da evitare](https://tuttofare-roma.it/guide/ristrutturare-bagno-roma): Quanto costa rifare il bagno a Roma: prezzi medi di mercato per un bagno di 5-8 m², cosa fa salire il conto, tempi reali, quando serve la CILA.
 - [Rifare l'impianto idraulico a Roma: quando le riparazioni non bastano più](https://tuttofare-roma.it/guide/rifare-impianto-idraulico-roma): Perdite che tornano, acqua color ruggine, poca pressione: quando a Roma conviene rifare l'impianto idraulico, cosa comprende, tempi, CILA e condominio.
 - [Imbiancare tutta la casa a Roma: tempi, preparazione e cosa chiedere prima](https://tuttofare-roma.it/guide/imbiancare-casa-roma): Imbiancare tutto l'appartamento a Roma: quanti giorni per 70-90 m², prezzi medi di mercato al m², che pittura usare e cosa deve dire il preventivo.
 - [Permessi per ristrutturare casa a Roma: CILA, SCIA e quando servono davvero](https://tuttofare-roma.it/guide/permessi-ristrutturare-casa-roma): Quale permesso serve per ristrutturare casa a Roma: edilizia libera, CILA o SCIA, vincoli del centro storico e cosa rischi se lavori senza pratica.
@@ -51,4 +51,4 @@
 ## Note per i crawler
 
 Sitemap: https://tuttofare-roma.it/sitemap.xml
-Aggiornato: 2026-09-23
+Aggiornato: 2026-10-12

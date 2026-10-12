@@ -81,12 +81,10 @@ try{if(localStorage.getItem(K)==='all'){gtag('consent','update',{analytics_stora
     {"@type": "City", "name": "Campagnano di Roma", "sameAs": "https://it.wikipedia.org/wiki/Campagnano_di_Roma"},
     {"@type": "City", "name": "Trevignano Romano", "sameAs": "https://it.wikipedia.org/wiki/Trevignano_Romano"}
   ],
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-    "opens": "08:00",
-    "closes": "19:00"
-  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "09:00", "closes": "13:00"}
+  ],
   "priceRange": "€€",
   "currenciesAccepted": "EUR",
   "paymentAccepted": "Contanti, Bonifico bancario",
@@ -125,7 +123,7 @@ try{if(localStorage.getItem(K)==='all'){gtag('consent','update',{analytics_stora
     {"@type": "Question", "name": "Quanto costa una ristrutturazione a Roma o Viterbo?", "acceptedAnswer": {"@type": "Answer", "text": "Dipende da superficie e tipo di intervento. Sul sito è disponibile un calcolatore per una stima orientativa immediata; il prezzo definitivo viene fissato dopo un sopralluogo gratuito, con preventivo scritto e senza sorprese."}},
     {"@type": "Question", "name": "Come posso richiedere un intervento?", "acceptedAnswer": {"@type": "Answer", "text": "Il modo più rapido è scrivere su WhatsApp al 389 448 1853: dicci che lavoro è, quanti metri quadri e per quando, con qualche foto se puoi. In alternativa puoi usare il modulo sul sito."}},
     {"@type": "Question", "name": "Quanto tempo ci vuole per ristrutturare un bagno a Roma?", "acceptedAnswer": {"@type": "Answer", "text": "Un bagno completo (demolizione, impianti, piastrelle, sanitari) richiede in media 2-3 settimane. I tempi possono variare se ci sono imprevisti sugli impianti esistenti."}},
-    {"@type": "Question", "name": "Lavorate anche il sabato?", "acceptedAnswer": {"@type": "Answer", "text": "Sì, siamo operativi dal lunedì al sabato, dalle 8:00 alle 19:00. Su WhatsApp puoi scriverci quando vuoi: rispondiamo in orario di lavoro."}},
+    {"@type": "Question", "name": "Lavorate anche il sabato?", "acceptedAnswer": {"@type": "Answer", "text": "Sì, il sabato dalle 9:00 alle 13:00. Dal lunedì al venerdì siamo operativi dalle 9:00 alle 17:00. Su WhatsApp puoi scriverci quando vuoi: rispondiamo in orario di lavoro."}},
     {"@type": "Question", "name": "Servono permessi per ristrutturare casa a Roma?", "acceptedAnswer": {"@type": "Answer", "text": "Dipende dal tipo di intervento. Per una semplice rinfrescata (pittura, pavimenti) di solito basta una CILA. Per lavori strutturali serve la SCIA. Vi indichiamo noi quale pratica serve e vi affianchiamo con un tecnico di fiducia per la parte burocratica."}}
   ]
 }
@@ -784,7 +782,7 @@ footer{background:var(--bg0);border-top:1px solid var(--line-d);padding:50px 0;c
       <details class="rv"><summary>Quanta esperienza avete?</summary><p>Lavoriamo in cantiere dal 2003: oltre 20 anni di mestiere e numerosi lavori completati tra Roma e Viterbo.</p></details>
       <details class="rv"><summary>Come vi contatto?</summary><p>Il modo piu rapido e <a href="https://wa.me/393894481853" target="_blank" rel="noopener">WhatsApp al 389 448 1853</a>: dicci che lavoro è, quanti metri quadri e per quando, allega una foto se puoi, e ricevi una prima valutazione. Oppure usa il modulo qui sotto.</p></details>
       <details class="rv"><summary>Quanto tempo ci vuole per ristrutturare un bagno a Roma?</summary><p>Un bagno completo (demolizione, impianti, piastrelle, sanitari) richiede in media 2-3 settimane. I tempi possono variare se ci sono imprevisti sugli impianti esistenti: per questo il sopralluogo gratuito conta, vi da date realistiche.</p></details>
-      <details class="rv"><summary>Lavorate anche il sabato?</summary><p>Si, siamo operativi dal lunedi al sabato, dalle 8:00 alle 19:00. Su WhatsApp puoi scriverci quando vuoi: rispondiamo in orario di lavoro.</p></details>
+      <details class="rv"><summary>Lavorate anche il sabato?</summary><p>Sì, il sabato dalle 9:00 alle 13:00. Dal lunedì al venerdì siamo operativi dalle 9:00 alle 17:00. Su WhatsApp puoi scriverci quando vuoi: rispondiamo in orario di lavoro.</p></details>
       <details class="rv"><summary>Servono permessi per ristrutturare casa a Roma?</summary><p>Dipende dal tipo di intervento. Per una semplice rinfrescata (pittura, pavimenti) di solito basta una CILA. Per lavori strutturali serve la SCIA. Vi indichiamo noi quale pratica serve e, se volete, vi affianchiamo con un tecnico di fiducia per la parte burocratica.</p></details>
     </div>
   </div>

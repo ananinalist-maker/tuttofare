@@ -8,6 +8,7 @@
 - Tipo: impresa di ristrutturazioni (Google: "Servizi di ristrutturazione")
 - Soci: Florin Racheriu e Daniele, soci alla pari, entrambi in cantiere e a contatto diretto con i clienti
 - In cantiere dal: 2003
+- Zona principale: Sutri, Nepi e dintorni, fino al lago di Bracciano (https://tuttofare-roma.it/zone/sutri)
 - Zone: Roma e provincia (centro storico, Roma Nord: Cassia, Flaminia, Prima Porta; Roma Sud; Bracciano, Anguillara Sabazia, Trevignano Romano, Formello, Campagnano di Roma, Sacrofano, Riano, Castelnuovo di Porto, Morlupo) e provincia di Viterbo (Viterbo, Sutri, Nepi, Civita Castellana, Vetralla, Capranica, Ronciglione, Monterosi, Caprarola, Bassano Romano, Oriolo Romano, Fabrica di Roma, Castel Sant'Elia)
 - Orari: lunedì-venerdì 9:00-17:00, sabato 9:00-13:00, domenica chiuso
 - Come lavora: sopralluogo gratuito, preventivo scritto voce per voce entro 48 ore, contratto a corpo con prezzo bloccato, un solo referente, dichiarazione di conformità degli impianti (DM 37/08) a fine lavori. Per le pratiche edilizie indica quale serve e affianca il cliente con un tecnico di fiducia.
@@ -23,6 +24,7 @@
 - [Investitori](https://tuttofare-roma.it/investitori): ristrutturazione di immobili da affittare o rivendere, prezzo bloccato e data certa
 - [Partner](https://tuttofare-roma.it/partner): impresa esecutrice per studi di architettura, geometri e agenzie immobiliari
 - [Guide](https://tuttofare-roma.it/guide): indice di tutte le guide pratiche
+- [Ristrutturazioni a Sutri, Nepi e dintorni](https://tuttofare-roma.it/zone/sutri): zona principale. Comuni serviti (Sutri, Nepi, Capranica, Monterosi, Ronciglione, Bassano Romano, Oriolo Romano, Vetralla, Caprarola, Civita Castellana, Trevignano Romano, Bracciano, Anguillara Sabazia), lavori, differenze rispetto a Roma, novità settimanali
 
 ## Guide
 
@@ -45,10 +47,11 @@
 - [Imbiancare casa a Bracciano, Anguillara e Trevignano: cosa cambia con l'umidità del lago](https://tuttofare-roma.it/guide/imbiancare-casa-bracciano): Ridipingere tutta la casa sul lago di Bracciano: come l'umidità cambia preparazione e pitture (antimuffa, silossani), stagione giusta e prezzi indicativi.
 - [Muffa e umidità a Bracciano: perché il lago la rende peggiore](https://tuttofare-roma.it/guide/muffa-umidita-bracciano): Perché a Bracciano, Anguillara e Trevignano la muffa torna più che a Roma: umidità del lago, case anni '80-'90 poco isolate e i lavori che la eliminano.
 - [Ristrutturare casa a Sutri e nella Tuscia: costi, tufo, tetti in legno e vincoli](https://tuttofare-roma.it/guide/ristrutturazione-casa-sutri): Ristrutturare casa o casale a Sutri, Nepi e Capranica: prezzi medi di mercato, muri in tufo, tetti in legno, vincoli della Soprintendenza e tempi.
+- [Ristrutturare una casa in tufo a Sutri e Nepi: umidità, intonaci e impianti](https://tuttofare-roma.it/guide/casa-in-tufo-sutri-nepi): Casa in tufo a Sutri, Nepi o Capranica: da dove arriva l'umidità, quali intonaci usare, come rifare gli impianti e in che ordine ristrutturare.
 - [Imbiancare casa a Civita Castellana, Nepi e Sutri: muri in tufo, umidità e facciate](https://tuttofare-roma.it/guide/imbiancare-casa-civita-castellana): Ridipingere tutta la casa o la facciata a Civita Castellana, Nepi e Sutri: tufo, soffitti alti, umidità di risalita, tempi e prezzi indicativi di mercato.
 - [Rifare il tetto a Viterbo e nella Tuscia: coppi, travi in legno e vincoli locali](https://tuttofare-roma.it/guide/rifare-tetto-viterbo-tuscia): Rifare il tetto a Viterbo, Sutri, Nepi o Vetralla: prezzi medi di mercato da 55 a 180 €/m², tempi di cantiere, coibentazione e vincoli Soprintendenza.
 
 ## Note per i crawler
 
 Sitemap: https://tuttofare-roma.it/sitemap.xml
-Aggiornato: 2026-10-12
+Aggiornato: 2026-10-14

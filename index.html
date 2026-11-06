@@ -32,7 +32,7 @@ try{if(localStorage.getItem(K)==='all'){gtag('consent','update',{analytics_stora
 <meta property="og:image:alt" content="Florin, artigiano Tuttofare, in un appartamento ristrutturato a Roma">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <link rel="canonical" href="https://tuttofare-roma.it/">
-<link rel="preload" as="image" href="/img/mood/loft-cucina-soggiorno.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="/img/mood/loft-cucina-soggiorno.jpg" imagesrcset="/img/mood/loft-cucina-soggiorno-640.webp 640w, /img/mood/loft-cucina-soggiorno-828.webp 828w, /img/mood/loft-cucina-soggiorno-1046.webp 1046w" imagesizes="104vw" fetchpriority="high">
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <meta property="og:url" content="https://tuttofare-roma.it/">
 <meta property="og:site_name" content="Tuttofare">
@@ -450,13 +450,13 @@ footer{background:var(--bg0);border-top:1px solid var(--line-d);padding:50px 0;c
 <section class="hero" id="hero">
   <div class="hero-stage" id="hero-stage">
     <div class="hero-slide active" data-label="Ristrutturazione completa">
-      <img src="img/mood/loft-cucina-soggiorno.jpg" alt="Soggiorno e cucina ristrutturati, stile loft" fetchpriority="high" decoding="async" width="1046" height="1576">
+      <img src="img/mood/loft-cucina-soggiorno.jpg" srcset="/img/mood/loft-cucina-soggiorno-640.webp 640w, /img/mood/loft-cucina-soggiorno-828.webp 828w, /img/mood/loft-cucina-soggiorno-1046.webp 1046w" sizes="104vw" alt="Soggiorno e cucina ristrutturati, stile loft" fetchpriority="high" decoding="async" width="1046" height="1576">
     </div>
     <div class="hero-slide" data-label="Interni su misura">
-      <img data-src="img/mood/camera-legno-scuro.jpg" alt="Camera con parete in legno" loading="lazy" decoding="async" width="736" height="1308">
+      <img data-src="img/mood/camera-legno-scuro.jpg" data-srcset="/img/mood/camera-legno-scuro-640.webp 640w, /img/mood/camera-legno-scuro-736.webp 736w" sizes="104vw" alt="Camera con parete in legno" loading="lazy" decoding="async" width="736" height="1308">
     </div>
     <div class="hero-slide" data-label="Ambienti luminosi">
-      <img data-src="img/mood/soggiorno-caldo.jpg" alt="Soggiorno luminoso con cucina a vista" loading="lazy" decoding="async" width="1125" height="1495">
+      <img data-src="img/mood/soggiorno-caldo.jpg" data-srcset="/img/mood/soggiorno-caldo-640.webp 640w, /img/mood/soggiorno-caldo-828.webp 828w, /img/mood/soggiorno-caldo-1125.webp 1125w" sizes="104vw" alt="Soggiorno luminoso con cucina a vista" loading="lazy" decoding="async" width="1125" height="1495">
     </div>
   </div>
   <div class="hero-shade"></div>
@@ -944,7 +944,7 @@ heroDotBtns.forEach(function(btn){
 });
 autoHero();
 // load inactive hero slides only after the page has loaded (keeps bandwidth for the LCP image)
-function loadHeroRest(){ document.querySelectorAll('.hero-slide img[data-src]').forEach(function(im){ im.src = im.dataset.src; im.removeAttribute('data-src'); }); }
+function loadHeroRest(){ document.querySelectorAll('.hero-slide img[data-src]').forEach(function(im){ if(im.dataset.srcset){ im.srcset = im.dataset.srcset; } im.src = im.dataset.src; im.removeAttribute('data-src'); }); }
 if(document.readyState === 'complete'){ setTimeout(loadHeroRest, 300); } else { window.addEventListener('load', function(){ setTimeout(loadHeroRest, 300); }); }
 
 var heroStage = document.getElementById('hero-stage');

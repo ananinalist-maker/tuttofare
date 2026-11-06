@@ -2,10 +2,128 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
-    { "source": "/guide/idraulico-urgente-roma", "destination": "/guide/rifare-impianto-idraulico-roma", "permanent": true },
-    { "source": "/guide/idraulico-urgente-bracciano-roma-nord", "destination": "/guide/rifare-impianto-idraulico-bracciano-roma-nord", "permanent": true },
-    { "source": "/guide/imbianchino-roma", "destination": "/guide/imbiancare-casa-roma", "permanent": true },
-    { "source": "/guide/imbianchino-bracciano", "destination": "/guide/imbiancare-casa-bracciano", "permanent": true },
-    { "source": "/guide/imbianchino-civita-castellana", "destination": "/guide/imbiancare-casa-civita-castellana", "permanent": true }
+    {
+      "source": "/guide/idraulico-urgente-roma",
+      "destination": "/guide/rifare-impianto-idraulico-roma",
+      "permanent": true
+    },
+    {
+      "source": "/guide/idraulico-urgente-bracciano-roma-nord",
+      "destination": "/guide/rifare-impianto-idraulico-bracciano-roma-nord",
+      "permanent": true
+    },
+    {
+      "source": "/guide/imbianchino-roma",
+      "destination": "/guide/imbiancare-casa-roma",
+      "permanent": true
+    },
+    {
+      "source": "/guide/imbianchino-bracciano",
+      "destination": "/guide/imbiancare-casa-bracciano",
+      "permanent": true
+    },
+    {
+      "source": "/guide/imbianchino-civita-castellana",
+      "destination": "/guide/imbiancare-casa-civita-castellana",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "frame-ancestors 'self'; base-uri 'self'; object-src 'none'"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), payment=()"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://tuttofare-roma.it"
+        }
+      ]
+    },
+    {
+      "source": "/fonts/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/img/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000, stale-while-revalidate=86400"
+        }
+      ]
+    },
+    {
+      "source": "/video/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000, stale-while-revalidate=86400"
+        }
+      ]
+    },
+    {
+      "source": "/guide.css",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
+      ]
+    },
+    {
+      "source": "/favicon.ico",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
+      ]
+    },
+    {
+      "source": "/favicon.svg",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
+      ]
+    },
+    {
+      "source": "/apple-touch-icon.png",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
+      ]
+    }
   ]
 }

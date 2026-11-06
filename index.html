@@ -613,27 +613,27 @@ footer{background:var(--bg0);border-top:1px solid var(--line-d);padding:50px 0;c
     <p class="lede rv">Video girati sul posto, dal grezzo alla consegna. Non ricostruzioni, non archivio.</p>
     <div class="port-grid">
       <div class="port-tile rv rv-1" data-video="video/completa-demolizione.mp4">
-        <video muted loop playsinline preload="none" poster="img/casi/completa-demolizione.jpg" data-src="video/completa-demolizione.mp4"></video>
+        <video muted loop playsinline preload="none" data-poster="img/casi/completa-demolizione.jpg" data-src="video/completa-demolizione.mp4"></video>
         <div class="port-info"><b>Ristrutturazione completa</b><div class="port-stats"><span>Demolizione</span></div></div>
       </div>
       <div class="port-tile rv rv-2" data-video="video/completa-muratura.mp4">
-        <video muted loop playsinline preload="none" poster="img/casi/completa-muratura.jpg" data-src="video/completa-muratura.mp4"></video>
+        <video muted loop playsinline preload="none" data-poster="img/casi/completa-muratura.jpg" data-src="video/completa-muratura.mp4"></video>
         <div class="port-info"><b>Ristrutturazione completa</b><div class="port-stats"><span>Muratura e impianti</span></div></div>
       </div>
       <div class="port-tile rv rv-3" data-video="video/bagno-posa-piastrelle.mp4">
-        <video muted loop playsinline preload="none" poster="img/casi/bagno-posa-piastrelle.jpg" data-src="video/bagno-posa-piastrelle.mp4"></video>
+        <video muted loop playsinline preload="none" data-poster="img/casi/bagno-posa-piastrelle.jpg" data-src="video/bagno-posa-piastrelle.mp4"></video>
         <div class="port-info"><b>Bagno chiavi in mano</b><div class="port-stats"><span>Posa piastrelle</span></div></div>
       </div>
       <div class="port-tile rv rv-1" data-video="video/bagno-finito.mp4">
-        <video muted loop playsinline preload="none" poster="img/casi/bagno-finito.jpg" data-src="video/bagno-finito.mp4"></video>
+        <video muted loop playsinline preload="none" data-poster="img/casi/bagno-finito.jpg" data-src="video/bagno-finito.mp4"></video>
         <div class="port-info"><b>Bagno finito</b><div class="port-stats"><span>Specchio su misura</span></div></div>
       </div>
       <div class="port-tile rv rv-2" data-video="video/cabina-armadio.mp4">
-        <video muted loop playsinline preload="none" poster="img/casi/cabina-armadio.jpg" data-src="video/cabina-armadio.mp4"></video>
+        <video muted loop playsinline preload="none" data-poster="img/casi/cabina-armadio.jpg" data-src="video/cabina-armadio.mp4"></video>
         <div class="port-info"><b>Cabina armadio su misura</b><div class="port-stats"><span>Falegnameria</span></div></div>
       </div>
       <div class="port-tile rv rv-3" data-video="video/illuminazione-veletta.mp4">
-        <video muted loop playsinline preload="none" poster="img/casi/illuminazione-veletta.jpg" data-src="video/illuminazione-veletta.mp4"></video>
+        <video muted loop playsinline preload="none" data-poster="img/casi/illuminazione-veletta.jpg" data-src="video/illuminazione-veletta.mp4"></video>
         <div class="port-info"><b>Veletta con LED</b><div class="port-stats"><span>Cartongesso</span></div></div>
       </div>
     </div>
@@ -1152,6 +1152,13 @@ var tileIO = new IntersectionObserver(function(entries){
   });
 },{threshold:.4});
 tileVideos.forEach(function(v){ tileIO.observe(v); });
+// set video posters only when the portfolio is near the viewport (keeps first-load bandwidth for the hero)
+var posterIO = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){ var v = e.target; if(v.dataset.poster){ v.poster = v.dataset.poster; v.removeAttribute('data-poster'); } posterIO.unobserve(v); }
+  });
+},{rootMargin:'800px 0px'});
+tileVideos.forEach(function(v){ posterIO.observe(v); });
 document.getElementById('vl-close').addEventListener('click', function(){
   vl.style.display = 'none'; vlVideo.pause(); vlVideo.src = '';
 });
